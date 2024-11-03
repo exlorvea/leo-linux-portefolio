@@ -51,13 +51,20 @@ a.index, .toggle {
     /*margin-left: 20px;  Indentation pour l'aspect d'arborescence */
 }
 
+/*.toggle {
+    color: lime; /* Couleur verte pour les liens */
+ /*   text-decoration: none; /* Pas de soulignement */
+ /*   cursor: pointer; /* Change le curseur en pointeur */
+  /*  text-decoration: none; /* Pas de soulignement */
+    /*margin-left: 20px;  Indentation pour l'aspect d'arborescence */
+/*}*/
 .toggle {
     color: lime; /* Couleur verte pour les liens */
     text-decoration: none; /* Pas de soulignement */
     cursor: pointer; /* Change le curseur en pointeur */
-    text-decoration: none; /* Pas de soulignement */
-    /*margin-left: 20px;  Indentation pour l'aspect d'arborescence */
+    display: block; /* Chaque lien occupe une ligne entière */
 }
+
 
 .toggle:hover {
     text-decoration: underline; /* Soulignement au survol pour indiquer l'interaction */
