@@ -1,20 +1,25 @@
 body {
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    background: url('scanlines.png') repeat;
+    padding: 0;
+    background-image: url('../images/scanlines.png');
+    background-color: #000;
     color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
 }
 
 .terminal {
+    width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
 }
 
-pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
+.output {
+    white-space: pre; /* Pour conserver les espaces */
+    font-size: 1.2rem; /* Ajustez la taille de la police ici */
+    opacity: 0; /* Démarre invisible */
+    transition: opacity 1s; /* Transition douce pour l'opacité */
 }
