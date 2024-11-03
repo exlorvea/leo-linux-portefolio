@@ -5,11 +5,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
 }
-{
-    background-image: url('../images/scanlines.png');
-    background-size: cover; /* Ajuste la taille de l'image */
-    /* ... autres styles ... */
-}
+
 #loader {
     display: flex;
     justify-content: center;
