@@ -4,6 +4,9 @@ body {
     color: lime;
     font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
+    background-image: url('../images/scanlines.png')no-repeat center center fixed;
+    background-size: cover; /* Ajuste la taille de l'image */
+    /* ... autres styles ... */
 }
 
 
@@ -23,7 +26,7 @@ body {
 }
 
 
-{
+/*{
     background-image: url('../images/scanlines.png')no-repeat center center fixed;
     background-size: cover; /* Ajuste la taille de l'image */
     /* ... autres styles ... */
