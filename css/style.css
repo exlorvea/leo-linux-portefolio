@@ -1,25 +1,78 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    background-image: url('../images/scanlines.png');
-    background-color: #000;
-    color: #00ff00;
-    font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
-.terminal {
-    width: 100%;
-    height: 100vh;
+body {
+    background-image: url('images/scanlines.png');
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden; /* Empêche le défilement pendant le chargement */
+}
+
+.loading {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+}
+
+.terminal-window {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ff00;
+    margin: auto;
+    position: relative;
+    color: #00ff00;
+    display: flex;
     flex-direction: column;
 }
 
-.output {
-    white-space: pre; /* Pour conserver les espaces */
-    font-size: 1.2rem; /* Ajustez la taille de la police ici */
-    opacity: 0; /* Démarre invisible */
-    transition: opacity 1s; /* Transition douce pour l'opacité */
+.window-header {
+    background-color: #232323;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.window-content {
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto; /* Ajoute un défilement si le contenu dépasse */
+}
+
+.hidden {
+    display: none; /* Cache la fenêtre terminal par défaut */
 }
