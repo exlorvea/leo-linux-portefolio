@@ -6,7 +6,7 @@ body {
     overflow: hidden;
     
     /* Image de fond */
-    background-image: url('/images/scanlines.png'); /* Assurez-vous que le chemin est correct */
+    background-image: url('images/scanlines.png'); /* Assurez-vous que le chemin est correct */
     background-repeat: no-repeat; /* Pas de répétition de l'image */
     background-position: center center; /* Centre l'image */
     background-attachment: fixed; /* Fixe l'image en arrière-plan */
