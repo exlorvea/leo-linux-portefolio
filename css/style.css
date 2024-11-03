@@ -1,14 +1,17 @@
 body {
     margin: 0;
-    background-color: rgba(0, 1, 1, 0.9);
+    background-color: rgba(0, 1, 1, 0.9); /* Couleur de fond avec transparence */
     color: lime;
     font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
-    background-image: url('../images/scanlines.png')no-repeat center center fixed;
-    background-size: cover; /* Ajuste la taille de l'image */
-    /* ... autres styles ... */
+    
+    /* Image de fond */
+    background-image: url('../images/scanlines.png'); /* Assurez-vous que le chemin est correct */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    background-position: center center; /* Centre l'image */
+    background-attachment: fixed; /* Fixe l'image en arrière-plan */
+    background-size: cover; /* Couvre tout l'arrière-plan */
 }
-
 
 .hidden {
     display: none; /* Masque les sections par défaut */
@@ -25,22 +28,12 @@ body {
     text-decoration: underline; /* Soulignement au survol pour indiquer l'interaction */
 }
 
-
-/*{
-    background-image: url('../images/scanlines.png')no-repeat center center fixed;
-    background-size: cover; /* Ajuste la taille de l'image */
-    /* ... autres styles ... */
-}
 #loader {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-size: 2em;
-}
-
-.hidden {
-    display: none;
 }
 
 .terminal-window {
