@@ -15,6 +15,10 @@ body {
 
 .hidden {
     display: none; /* Masque les sections par défaut */
+    color: lime; /* Couleur verte pour les liens */
+    text-decoration: none; /* Pas de soulignement */
+    cursor: pointer; /* Change le curseur en pointeur */
+    /*margin-left: 20px;  Indentation pour l'aspect d'arborescence */
 }
 
 .toggle {
