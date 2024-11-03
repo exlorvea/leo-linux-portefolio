@@ -17,10 +17,7 @@ pre {
     margin: 0;
     line-height: 1.2; /* Ajuste l'espacement des lignes */
 }
-br {
-    margin: 0;
-    line-height: 1.2; /* Ajuste l'espacement des lignes */
-}
+
 
 a.index, .toggle {
     display: inline;
