@@ -1,103 +1,43 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-}
-
 body {
-    background-image: url('images/scanlines.png'); /* Assurez-vous que le chemin est correct */
-    background-color: black;
-    color: #00ff00; /* Texte vert */
-    font-size: 16px;
-    line-height: 1.5;
+    margin: 0;
+    font-family: monospace;
+    background: url('images/scanlines.png') repeat; /* Chemin vers votre image */
+    color: #00ff00; /* Couleur verte pour le texte */
 }
 
 .loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.terminal-window {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #00ff00;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 20px;
-    background-color: black;
-    position: relative;
-}
-
-.window-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    background-color: #005700; /* Vert foncé pour l'en-tête */
-    border-bottom: 2px solid #00ff00;
-}
-
-.title {
-    color: #00ff00;
-    font-weight: bold;
-}
-
-.controls {
-    display: flex;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin-left: 5px;
-}
-
-.red {
-    background-color: red;
-}
-
-.yellow {
-    background-color: yellow;
-}
-
-.green {
-    background-color: green;
-}
-
-.window-content {
-    padding: 10px;
-    overflow-y: auto;
-    height: 400px; /* Ajustez la hauteur selon vos besoins */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: #00ff00; /* Couleur verte pour le texte */
 }
 
 .hidden {
-    display: none;
+    display: none; /* Masque l'élément */
 }
 
-/* Animation de chargement */
-@keyframes loadingAnimation {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+.terminal-window {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border: 2px solid #00ff00; /* Bordure verte pour la fenêtre */
+    background-color: rgba(0, 0, 0, 0.8); /* Fond noir transparent */
+    padding: 20px;
+    overflow-y: auto;
 }
 
-.loading p {
-    animation: loadingAnimation 2s forwards; /* Modifiez la durée selon vos besoins */
+.window-header {
+    background-color: #00ff00; /* Couleur verte pour l'en-tête */
+    color: #000; /* Couleur noire pour le texte de l'en-tête */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
 }
 
-/* Responsiveness */
-@media (max-width: 600px) {
-    .terminal-window {
-        margin: 10px;
-        padding: 5px;
-    }
-
-    .loading {
-        font-size: 18px;
-    }
+.window-content {
+    margin-top: 10px;
 }
