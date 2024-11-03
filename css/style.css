@@ -18,10 +18,19 @@ pre {
     line-height: 1.2; /* Ajuste l'espacement des lignes */
 }
 
-/* Saut de ligne compact */
-.compact-br {
-    line-height: 1; /* Réduit l'espacement vertical */
+/* Suppression des marges et ajustement de l'espacement dans les <pre> */
+#cvSection pre, #portfolioSection pre, #veilleSection pre {
+    margin: 0;
+    padding: 0;
+    line-height: 1; /* Réduit l’espacement entre les lignes */
 }
+
+/* Compacte le <br> pour supprimer l'espace vertical */
+.compact-br {
+    line-height: 0;
+    margin: 0;
+}
+
 
 a.index, .toggle {
     display: inline;
