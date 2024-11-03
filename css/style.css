@@ -18,6 +18,10 @@ pre {
     line-height: 1.2; /* Ajuste l'espacement des lignes */
 }
 
+/* Saut de ligne compact */
+.compact-br {
+    line-height: 1; /* Réduit l'espacement vertical */
+}
 
 a.index, .toggle {
     display: inline;
