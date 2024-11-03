@@ -75,7 +75,8 @@ a.index, .toggle {
     text-decoration: none;
     color: lime;
     border: 1px solid lime;
-    padding: 5px;
+    padding: 0;
+    text-decoration: none; 
 }
 
 .index:hover {
