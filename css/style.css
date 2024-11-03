@@ -1,64 +1,20 @@
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
+    background: url('scanlines.png') repeat;
     color: #00ff00;
-    background-color: #000;
-    background-image: url('../scanlines.png'); /* Assurez-vous que le chemin d'accès est correct */
-    background-repeat: repeat;
-    background-size: cover;
+    overflow: hidden;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.terminal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
-header {
-    text-align: center;
-    border-bottom: 1px solid #00ff00;
-    padding-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    color: #00ff00;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #74f774; /* Une couleur verte plus claire au survol */
-}
-
-main {
-    padding: 20px;
-}
-
-h1, h2 {
-    text-shadow: 1px 1px 2px rgba(0, 255, 0, 0.5);
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #00ff00;
-    padding-top: 10px;
-}
-
-/* Styles responsive */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
