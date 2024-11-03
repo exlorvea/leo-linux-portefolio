@@ -10,6 +10,7 @@
 <body>
     <div id="loader">Chargement...</div>
     <div id="content" class="hidden">
+# ça vas degager souvent ici
 <div class="terminal-window">
     <h1>Bienvenue sur mon Portfolio</h1>
     <p>Voici les sections disponibles :</p>
@@ -17,18 +18,36 @@
     <h2>Menu</h2>
     <pre>
 > menu
+</pre>
+    <button class="toggle" onclick="toggleSection('cvSection')">Afficher/Masquer CV</button>
+    <div id="cvSection" class="hidden">
+        <pre>
 ├── CV
 │   └── <a href="path/to/cv.pdf" class="index">Télécharger mon CV</a>
+        </pre>
+    </div>
+
+    <button class="toggle" onclick="toggleSection('portfolioSection')">Afficher/Masquer Portfolio</button>
+    <div id="portfolioSection" class="hidden">
+        <pre>
 ├── Portfolio
 │   ├── <a href="#projet1" class="index">Projet 1</a>
 │   ├── <a href="#projet2" class="index">Projet 2</a>
 │   └── <a href="#projet3" class="index">Projet 3</a>
+        </pre>
+    </div>
+
+    <button class="toggle" onclick="toggleSection('veilleSection')">Afficher/Masquer Veille Technologique</button>
+    <div id="veilleSection" class="hidden">
+        <pre>
 └── Veille Technologique
     ├── <a href="#article1" class="index">Article 1</a>
     ├── <a href="#article2" class="index">Article 2</a>
     └── <a href="#article3" class="index">Article 3</a>
-    </pre>
+        </pre>
+    </div>
 </div>
+
 
         </div>
     </div>
