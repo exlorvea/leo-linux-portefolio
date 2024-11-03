@@ -5,18 +5,23 @@ body {
     font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
 }
+
+
 .hidden {
     display: none; /* Masque les sections par défaut */
 }
 
 .toggle {
-    background-color: black; /* Fond noir pour le bouton */
-    color: lime; /* Texte vert pour le bouton */
-    border: 1px solid lime; /* Bordure verte pour le bouton */
+    color: lime; /* Couleur verte pour les liens */
+    text-decoration: none; /* Pas de soulignement */
     cursor: pointer; /* Change le curseur en pointeur */
-    padding: 10px; /* Rembourrage pour le bouton */
-    margin-top: 10px; /* Espace au-dessus du bouton */
+    margin-left: 20px; /* Indentation pour l'aspect d'arborescence */
 }
+
+.toggle:hover {
+    text-decoration: underline; /* Soulignement au survol pour indiquer l'interaction */
+}
+
 
 {
     background-image: url('../images/scanlines.png');
