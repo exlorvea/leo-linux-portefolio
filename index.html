@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="terminal">
-        <div class="output" id="terminal-output"></div>
+    <div class="loading">
+        <p>Chargement...</p>
     </div>
-    <script src="js/script.js"></script>
+    
+    <div class="terminal-window hidden">
+        <div class="window-header">
+            <span class="title">Mon Portfolio</span>
+            <span class="controls">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </span>
+        </div>
+        <div class="window-content">
+            <h1>Bienvenue dans mon portfolio</h1>
+            <p>Voici mes projets et réalisations.</p>
+            <p>Vous pouvez naviguer à travers les différentes pages en utilisant le menu ci-dessus.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
