@@ -12,6 +12,22 @@ body {
     background-attachment: fixed; /* Fixe l'image en arrière-plan */
     background-size: cover; /* Couvre tout l'arrière-plan */
 }
+/* Supprime l'espacement vertical dans les éléments de l'arborescence */
+pre {
+    margin: 0;
+    line-height: 1.2; /* Ajuste l'espacement des lignes */
+}
+
+a.index, .toggle {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden div {
+    margin: 0;
+    padding: 0;
+}
 
 .hidden {
     display: none; /* Masque les sections par défaut */
