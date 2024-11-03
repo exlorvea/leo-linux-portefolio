@@ -5,6 +5,19 @@ body {
     font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
 }
+.hidden {
+    display: none; /* Masque les sections par défaut */
+}
+
+.toggle {
+    background-color: black; /* Fond noir pour le bouton */
+    color: lime; /* Texte vert pour le bouton */
+    border: 1px solid lime; /* Bordure verte pour le bouton */
+    cursor: pointer; /* Change le curseur en pointeur */
+    padding: 10px; /* Rembourrage pour le bouton */
+    margin-top: 10px; /* Espace au-dessus du bouton */
+}
+
 {
     background-image: url('../images/scanlines.png');
     background-size: cover; /* Ajuste la taille de l'image */
