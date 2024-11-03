@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="loading" id="loading">Chargement...</div>
-    <div class="terminal-window hidden" id="terminal">
-        <pre id="terminal-text">Bienvenue dans le terminal !</pre>
+    <div id="loader">Chargement...</div>
+    <div id="content" class="hidden">
+        <div class="terminal-window">
+            <h1>Bienvenue sur mon portfolio</h1>
+            <div class="banner">
+                <a href="#projet1" class="index">Projet 1</a>
+                <a href="#projet2" class="index">Projet 2</a>
+                <a href="#projet3" class="index">Projet 3</a>
+                <!-- Ajoute d'autres projets ici -->
+            </div>
+        </div>
     </div>
-    <script src="js/script.js"></script>
 </body>
 </html>
