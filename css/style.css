@@ -1,6 +1,12 @@
 body {
     margin: 0;
-    background-image: url('images/scanlines.png'); /* Assurez-vous que le chemin est correct */
+   /* background-image: url('images/scanlines.png');  Assurez-vous que le chemin est correct */
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0, 12, 0, 0.5),
+    rgba(0, 6, 0, 0.5)
+  ),
+  url("images/scanlines.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -12,7 +18,7 @@ body {
 
 /* Appliquer la couleur semi-transparente dans un conteneur */
 .container {
-    background-color: rgba(0, 12, 0, 0.8); /* Noir avec une légère teinte verte et 20% de transparence */
+    /*background-color: rgba(0, 12, 0, 0.8);  Noir avec une légère teinte verte et 20% de transparence */
     padding: 20px;
     width: 100%;
     height: 100vh; /* Prend toute la hauteur de l'écran */
