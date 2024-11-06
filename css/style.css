@@ -1,12 +1,13 @@
 body {
     margin: 0;
-   /* background-image: url('images/scanlines.png');  Assurez-vous que le chemin est correct */
+   /* background-image: url('images/scanlines.png'); */
     background-image: linear-gradient(
     to bottom,
     rgba(0, 12, 0, 0.8),
     rgba(0, 6, 0, 0.8)
   ),
   url("images/scanlines.png");
+
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
