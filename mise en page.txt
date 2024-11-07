@@ -1,0 +1,47 @@
+logo LLG |Bienvenue sur mon Portfolio|
+> menu
+├── CV
+│  └── mon CV
+├── Portfolio
+│  ├── Projet 1
+│  ├── Projet 2
+│  └── Projet 3
+└── Veille Technologique
+  ├── Article 1
+  ├── Article 2
+  └── Article 3
+       ___________________________________________________________________________________
+
+Bienvenue sur le portfolio de Léo ! Un espace numérique qui combine l'esthétique rétro 
+des anciens terminaux et la modernité de projets innovants.
+
+──────────────────────────────────────────────────────────────────────────────────────────
+INTRODUCTION :
+   > Passionné par l'informatique, je suis spécialisé dans la conception de solutions 
+   > techniques et créatives, inspirées des interfaces des débuts de l'ère numérique.
+   > Ici, vous trouverez mon parcours, mes projets, et mes sujets de veille technologique.
+
+PERSONNES QUI M'ONT INSPIRÉ :
+   - **Alan Turing**       : Pionnier de l'informatique théorique et de l'intelligence artificielle.
+   - **Grace Hopper**      : Inventrice du premier compilateur et figure marquante de la programmation.
+   - **Linus Torvalds**    : Créateur de Linux, symbole de l'open-source et du partage de connaissances.
+   - **Margaret Hamilton** : Ingénieure en logiciel pour Apollo, un modèle de rigueur et d'innovation.
+   - **Dennis Ritchie**    : Co-créateur du langage C, essentiel pour le développement de logiciels modernes.
+
+   > Chacune de ces personnes a contribué de manière significative au domaine informatique,
+   > et leur vision continue de guider mon approche et mes choix techniques.
+
+──────────────────────────────────────────────────────────────────────────────────────────
+
+NAVIGATION :
+   - **CV**              : Consultez mon parcours académique et professionnel.
+   - **Portfolio**       : Explorez mes projets avec des détails techniques et contextuels.
+   - **Veille Technologique** : Suivez les articles et innovations qui m'inspirent.
+
+──────────────────────────────────────────────────────────────────────────────────────────
+
+                        Prêt pour l'exploration ? Choisissez une option ci-dessus.
+
+──────────────────────────────────────────────────────────────────────────────────────────
+
+© 2024 Léo. Tous droits réservés.
