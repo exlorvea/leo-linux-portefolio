@@ -19,22 +19,22 @@ window.onload = function() {
     
     const interval = setInterval(() => {
         if (messageIndex < messages.length) {
-            // Create a new line of text and add it to the loader
             const line = document.createElement('p');
             line.textContent = messages[messageIndex];
+            line.classList.add('code-line');
             loader.appendChild(line);
             messageIndex++;
         } else {
-            // Stop interval and finish loading sequence
             clearInterval(interval);
             setTimeout(() => {
                 loader.style.display = 'none';
                 content.classList.remove('hidden');
-            }, 1000); // Slight pause before displaying content
+            }, 1000);
         }
-    }, 400); // Display a new message every 400 ms
+    }, 400);
 };
 
+// Toggle visibility for sections in the content
 function toggleSection(sectionId) {
     const section = document.getElementById(sectionId);
     section.classList.toggle('hidden');
