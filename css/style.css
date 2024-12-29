@@ -117,3 +117,43 @@ a.index, .toggle {
     background-color: lime;
     color: black;
 }
+
+
+
+#loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black; /* Couleur de fond */
+    color: green; /* Couleur des messages */
+    font-family: "Courier New", Courier, monospace;
+    overflow: hidden;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease-in-out;
+}
+
+.code-line {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
