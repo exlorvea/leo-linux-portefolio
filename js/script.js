@@ -2,7 +2,7 @@ window.onload = function () {
     const loader = document.getElementById('loader');
     const logo = document.getElementById('logo');
     const loaderMessages = document.getElementById('loader-messages');
-    const content = document.getElementById('content');
+    const content = document.getElementById('mainContent'); // Ajustement ici
     const messages = [
         "[BOOT] Initializing system components...",
         "[OK] Loading essential modules...",
@@ -33,8 +33,8 @@ window.onload = function () {
                 setTimeout(() => {
                     loader.style.display = 'none';
                     content.classList.remove('hidden');
-                }, 1000);
+                }, 1000); // Attente après la fin des messages
             }
-        }, 400);
-    }, 2000); // Attente de 2 secondes pour afficher les lignes après le logo
+        }, 400); // Intervalle entre les messages
+    }, 2000); // Attente de 2 secondes avant de démarrer les messages
 };
