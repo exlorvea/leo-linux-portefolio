@@ -1,20 +1,25 @@
 window.onload = function () {
     const loader = document.getElementById('loader');
-    const logo = document.getElementById('logo');
     const loaderMessages = document.getElementById('loader-messages');
-    const content = document.getElementById('mainContent'); // Ajustement ici
+    const mainContent = document.getElementById('mainContent');
     const messages = [
         "[BOOT] Initializing system components...",
-        "[OK] Loading essential modules...",
-        "[INFO] Checking file integrity...",
-        "[WARN] Monitoring network activity...",
-        "[OK] Verifying user permissions...",
-        "[LOADING] Accessing secret server files...",
-        "[OK] Retrieving encrypted data...",
-        "[BOOT] Starting user interface...",
-        "[SUCCESS] Connection to secure database established",
-        "[INFO] Running system diagnostic...",
-        "[OK] Ready for user interaction."
+        "[OK] Loading kernel modules...",
+        "[INFO] Checking file system integrity...",
+        "[OK] Mounting root partition...",
+        "[OK] Activating swap space...",
+        "[OK] Initializing hardware abstraction layer...",
+        "[INFO] Detecting devices: Keyboard [OK]",
+        "[INFO] Detecting devices: Mouse [OK]",
+        "[INFO] Detecting devices: Display [OK]",
+        "[OK] Starting network services...",
+        "[OK] Configuring IP address...",
+        "[INFO] Connecting to DNS server...",
+        "[OK] Starting SSH daemon...",
+        "[OK] Starting Apache web server...",
+        "[OK] Starting MySQL database server...",
+        "[INFO] Verifying user authentication...",
+        "[SUCCESS] System startup complete. Welcome!"
     ];
 
     let messageIndex = 0;
@@ -32,9 +37,9 @@ window.onload = function () {
                 clearInterval(interval);
                 setTimeout(() => {
                     loader.style.display = 'none';
-                    content.classList.remove('hidden');
-                }, 1000); // Attente après la fin des messages
+                    mainContent.classList.remove('hidden');
+                }, 1000);
             }
-        }, 400); // Intervalle entre les messages
+        }, 300); // Intervalle entre les messages
     }, 2000); // Attente de 2 secondes avant de démarrer les messages
 };
