@@ -118,34 +118,36 @@ a.index, .toggle {
     color: black;
 }
 
+/* loader */
+
 #loader {
-    position: relative; /* Assure que les enfants soient positionnés par rapport à ce conteneur */
+    position: relative; /* Positionnement pour les enfants */
     width: 100%;
     height: 100vh; /* Occupe tout l'écran */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black; /* Fond noir comme un terminal */
+    background: black; /* Fond noir pour l'effet terminal */
 }
 
 #logo {
-    max-width: 200px; /* Limite la taille du logo */
-    margin-bottom: 20px; /* Espace entre le logo et le texte */
+    max-width: 200px; /* Taille limitée pour le logo */
+    margin-bottom: 20px; /* Espace sous le logo */
 }
 
 #loader-messages-container {
-    position: absolute; /* Permet un alignement précis */
-    top: 50%; /* Centrer verticalement */
-    right: 10px; /* Aligne le texte près du bord droit de l'écran */
-    transform: translateY(-50%); /* Centre parfaitement le texte */
-    text-align: right; /* Aligne les lignes à droite */
-    width: 50%; /* Limite la largeur du texte */
+    position: absolute; /* Permet un positionnement précis */
+    top: 50%; /* Centre verticalement */
+    left: 10px; /* Colle le texte au bord gauche */
+    transform: translateY(-50%); /* Centre parfaitement le texte verticalement */
+    text-align: left; /* Aligne le texte à gauche */
+    width: 50%; /* Contrôle la largeur de la zone de texte */
 }
 
 #loader-messages {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 12px; /* Petite taille pour l'effet terminal */
-    color: #00ff00; /* Couleur vert "terminal" */
+    font-size: 12px; /* Petite taille pour un style terminal */
+    color: #00ff00; /* Couleur vert terminal */
     line-height: 1.4; /* Espacement entre les lignes */
 }
 
