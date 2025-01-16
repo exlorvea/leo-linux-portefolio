@@ -838,6 +838,15 @@ window.onload = function () {
         "[OK] Starting MySQL database server...",
         "[INFO] Verifying user authentication...",
         "[SUCCESS] System startup complete. Welcome!"
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
     ];
 
     let messageIndex = 0;
