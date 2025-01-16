@@ -837,7 +837,7 @@ window.onload = function () {
         "[OK] Starting Apache web server...",
         "[OK] Starting MySQL database server...",
         "[INFO] Verifying user authentication...",
-        "[SUCCESS] System startup complete. Welcome!"
+        "[SUCCESS] System startup complete. Welcome!",
         " ",
         " ",
         " ",
@@ -846,7 +846,7 @@ window.onload = function () {
         " ",
         " ",
         " ",
-        " ",
+        " "
     ];
 
     let messageIndex = 0;
