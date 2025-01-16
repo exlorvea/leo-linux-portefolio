@@ -880,6 +880,6 @@ window.onload = function () {
                     mainContent.classList.remove('hidden');
                 }, 1000);
             }
-        }, 300); // Intervalle entre les messages
+        }, 30); // Intervalle entre les messages
     }, 2000); // Attente de 2 secondes avant de démarrer les messages
 };
