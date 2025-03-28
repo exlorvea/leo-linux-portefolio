@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainContent = document.getElementById("mainContent");
     const terminalSection = document.querySelector(".terminal-section");
     
-    // Vérifier que la section terminal existe
     if (!terminalSection) {
         console.error("Erreur : .terminal-section introuvable");
         return;
