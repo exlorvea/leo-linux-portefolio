@@ -51,16 +51,28 @@ pre {
     background-color: lime;
     color: black;
 }
+.terminal-window p {
+    font-family: 'Courier New', Courier, monospace;
+    color: lime;
+    margin: 0;
+    white-space: pre-wrap; /* Permet la mise en page ASCII sans tout casser */
+}
 
-.terminal-window {
-    border: 1px solid green;
-    padding: 20px;
-    width: 80%;
-    margin: 50px auto;
-    box-shadow: 0 0 10px lime;
-        min-height: 100vh; /* Au moins la hauteur de l’écran */
-    height: auto;      /* S’ajuste au contenu */
-    overflow: visible; /* Pas de restriction sur le scroll */
+#menuSection,
+#cvSection,
+#portfolioSection,
+#veilleSection {
+    margin-left: 0px; /* Décalage pour l'arborescence */
+}
+
+.hidden {
+    display: none;
+}
+
+.toggle {
+    cursor: pointer;
+    color: lime;
+    text-decoration: none;
 }
 
 /* Loader */
@@ -101,4 +113,22 @@ pre {
     font-size: 14px;
     line-height: 1.4;
     white-space: pre-wrap;
+}
+
+.command {
+    font-family: monospace;
+    color: lime;
+    background-color: transparent;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.cadre {
+    position: absolute;    /* Ou "fixed" si tu veux qu’il reste en place */
+    left: 10;               /* Aligne à gauche */
+    width: 40%px;          /* Largeur du cadre */
+    border: 1px solid lime; /* Bordure verte */
+    padding: 10px;         /* Espace intérieur */
+    color: lime;           /* Texte vert */
+    font-family: monospace; /* Police style terminal */
 }
