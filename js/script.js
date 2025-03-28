@@ -1,11 +1,10 @@
 function toggleSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section.classList.contains('hidden')) {
-        section.classList.remove('hidden');
-    } else {
-        section.classList.add('hidden');
+    var section = document.getElementById(sectionId);
+    if (section) {
+        section.classList.toggle("hidden");
     }
 }
+
 
 window.onload = function () {
     const loader = document.getElementById('loader');
@@ -38,3 +37,43 @@ window.onload = function () {
         }, 30);
     }, 2000);
 };
+//new stuff//
+document.addEventListener("DOMContentLoaded", function () {
+    const loader = document.getElementById("loader");
+    const mainContent = document.getElementById("mainContent");
+    const terminalSection = document.querySelector(".terminal-section");
+    
+    // Vérifier que la section terminal existe
+    if (!terminalSection) {
+        console.error("Erreur : .terminal-section introuvable");
+        return;
+    }
+
+    const terminalText = terminalSection.innerHTML.trim();
+    const terminalLines = terminalText.split(/(<[^>]+>|\n)/g).filter(line => line.trim() !== "");
+    terminalSection.innerHTML = ""; // Vider le contenu avant d'écrire
+    
+    // Désactiver le scroll pendant le chargement
+    document.body.style.overflow = "hidden";
+
+    setTimeout(() => {
+        loader.style.display = "none";
+        mainContent.classList.remove("hidden");
+        document.body.style.overflow = "auto";
+        
+        // Lancer l'effet d'écriture progressive
+        typeEffect(terminalSection, terminalLines, 50);
+    }, 4000);
+});
+
+function typeEffect(element, lines, speed) {
+    let i = 0;
+    function type() {
+        if (i < lines.length) {
+            element.innerHTML += lines[i];
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    type();
+}
