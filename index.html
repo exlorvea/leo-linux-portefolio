@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Portfolio Léo Linux</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+    <link rel="icon" href="images/LLG.png" type="image/png">        <!-- icon site -->
+
 </head>
 <body>
     <div class="container">
@@ -20,182 +22,78 @@
         <!-- menu -->
         <div id="mainContent" class="hidden">
             <div class="terminal-window">
-                <h1><a href="index.html"><img src="images/LLG.png" alt="logo LLG"></a> |Bienvenue sur mon Portfolio|</h1>
-                <pre>
-<a href="javascript:void(0);" class="toggle" onclick="toggleSection('menuSection')"> > menu </a>
-<div id="menuSection" class="hidden">
-├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('cvSection')">CV</a>
-<div id="cvSection" class="hidden">│   └── <a href="#cv" class="index">mon CV</a>
-├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('portfolioSection')">Portfolio</a>
-<div id="portfolioSection" class="hidden">│   ├── <a href="#projet1" class="index">Projet 1</a>
-│   ├── <a href="#projet2" class="index">Projet 2</a>
-│   └── <a href="#projet3" class="index">Projet 3</a>
-└── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('veilleSection')">Veille Technologique</a>
-<div id="veilleSection" class="hidden">    ├── <a href="#article1" class="index">Article 1</a>
-    ├── <a href="#article2" class="index">Article 2</a>
-    └── <a href="#article3" class="index">Article 3</a></div>
-</div>
-                </pre>
+                <h1>
+                    <a href="index.html"><img src="images/LLG.png" alt="logo LLG"></a> |Portfolio Léo Linux|
+                </h1>
+        
+                <!-- Menu principal -->
+                <a href="javascript:void(0);" class="toggle" onclick="toggleSection('menuSection')"> > menu </a>
+                <div id="menuSection" class="hidden">
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('cvSection')">CV</a></p>
+                    <div id="cvSection" class="hidden">
+                        <p>│   └── <a href="#cv" class="index">mon CV</a></p>
+                    </div>
+        
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('portfolioSection')">Portfolio</a></p>
+                    <div id="portfolioSection" class="hidden">
+                        <p>│   ├── <a href="#projet1" class="index">Projet 1</a></p>
+                        <p>│   ├── <a href="#projet2" class="index">Projet 2</a></p>
+                        <p>│   └── <a href="#projet3" class="index">Projet 3</a></p>
+                    </div>
+        
+                    <p>└── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('veilleSection')">Veille Technologique</a></p>
+                    <div id="veilleSection" class="hidden">
+                        <p>    ├── <a href="#article1" class="index">Article 1</a></p>
+                        <p>    ├── <a href="#article2" class="index">Article 2</a></p>
+                        <p>    └── <a href="#article3" class="index">Article 3</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 <!-- Contenu principal -->
     <pre>----------------------------------------------</pre>
  <!-- Contenu principal -->
-<pre class="content">
-    ┌────────────────[ $ whoami ]────────────────────────────┐
-    │ Je suis Léo Lelong--goncalves, passionné par les       │
-    │ réseaux, les systèmes et l’open source.                │
-    │ Bienvenue dans mon espace numérique !                  │
-    └────────────────────────────────────────────────────────┘
-    </pre>
-    
-    <pre class="content">
-        ┌──────────────[ $ cat formation.txt ]─────────────────┐  
-        │ BTS SIO - Option SISR                                │  
-        │                                                      │  
-        │  Administration des réseaux                          │  
-        │ - Configuration et gestion des VLAN, DHCP, DNS       │  
-        │ - Routage, NAT, pare-feu (iptables, pfSense)         │  
-        │ - Sécurisation des infrastructures réseau            │  
-        │                                                      │  
-        │  Gestion des systèmes                                │  
-        │ - Déploiement et maintenance de serveurs Linux       │  
-        │   (Debian, Ubuntu, CentOS) et Windows Server         │  
-        │ - Automatisation avec Bash, PowerShell, Ansible      │  
-        │ - Gestion des droits, sauvegarde et restauration     │  
-        │                                                      │  
-        │  Virtualisation et Cloud                             │  
-        │ - Hyperviseurs : Proxmox, VMware, Hyper-V            │  
-        │ - Conteneurisation avec Docker et Kubernetes         │  
-        │ - Hébergement et services cloud (AWS, Azure)         │  
-        │                                                      │  
-        │  Sécurité et supervision                             │  
-        │ - Analyse des vulnérabilités et gestion des logs     │  
-        │ - Détection d’intrusion (SIEM, IDS/IPS)              │  
-        │ - Surveillance réseau avec Zabbix, Nagios            │  
-        │                                                      │  
-        │  Projets et certifications                           │  
-        │ - Mise en place d’architectures réseau sécurisées    │  
-        │ - Études de cas, rédaction de documentation          │  
-        │ - Préparation aux certifications (CCNA, LPIC-1)      │  
-        │                                                      │  
-        │  Promo 2023/2025, Bayonne                            │  
-        └──────────────────────────────────────────────────────┘  
-         
 
-    </pre>
-    
-    <pre class="content">
-        ┌─────────────[ $ ls -l compétences ]───────────────┐  
-        │ Réseaux;                                          │  
-        │ - Configuration et gestion des VLAN, DHCP, DNS    │  
-        │ - Routage, NAT, VPN (WireGuard, OpenVPN)          │  
-        │ - Pare-feu et filtrage (iptables, pfSense)        │  
-        │ - Supervision réseau (Zabbix, Nagios)             │  
-        │                                                   │  
-        │ Systèmes                                          │  
-        │ - Administration Linux (Debian, Ubuntu, CentOS)   │  
-        │ - Gestion des services Windows Server             │  
-        │ - Automatisation (Bash, PowerShell, Ansible)      │  
-        │ - Gestion des utilisateurs, sauvegardes           │  
-        │                                                   │  
-        │ Virtualisation & Cloud                            │  
-        │ - Hyperviseurs : Proxmox, VMware, Hyper-V         │  
-        │ - Conteneurisation : Docker, Kubernetes           │  
-        │ - Déploiement cloud (AWS, Azure)                  │  
-        │                                                   │  
-        │ Sécurité                                          │  
-        │ - Configuration et durcissement des systèmes      │  
-        │ - Gestion des accès et authentification (LDAP)    │  
-        │ - Analyse des logs et détection d’intrusion       │  
-        │ - Pentesting (bases) avec Kali Linux              │  
-        │                                                   │  
-        │ Développement & Automatisation                    │  
-        │ - Scripting : Bash, PowerShell, Python (bases)    │  
-        │ - Gestion des configurations (Ansible)            │  
-        │ - CI/CD : Git, Docker, pipelines GitHub           │  
-        │                                                   │  
-        │ Soft Skills & Gestion de Projet                   │  
-        │ - Rédaction de documentation technique            │  
-        │ - Travail en équipe et gestion des incidents      │  
-        │ - Veille technologique et adaptation rapide       │  
-        └───────────────────────────────────────────────────┘  
-        
-    </pre>
-    
-    <pre class="content">
-    ┌──────────────[ $ man linux ]───────────────┐
-    │ Linux, c’est plus qu’un OS : c’est une     │
-    │ philosophie. Pas de boîtes noires, pas de  │
-    │ verrous propriétaires. Avec l’Open Source, │
-    │ on construit ensemble : de GNU à Git, tout │
-    │ repose sur la liberté. Windows ? Une prison│
-    │ dorée. Linux ? Une porte ouverte sur       │
-    │ l’infini. Essayez "apt install freedom" !  │
-    └────────────────────────────────────────────┘
-    </pre>
-    
-    <pre class="content">
-    ┌──────────────[ $ fortune | tuxsay ]────────┐
-    │ "Informatique : la science des machines    │
-    │ qui pensent." - Alan Turing                │
-    │                                            │
-    │ "Ce que j’ai personnellement découvert,    │
-    │  c’est qu’il est plus facile de manipuler  │
-    │  les gens que la technologie."             │
-    │  - Kevin Mitnick                           │
-    │                                            │
-    │ "Les logiciels, c’est comme le sexe :      │
-    │ c’est mieux quand c’est libre." - Linus T. │
-    │                                            │
-    │                                            │
-    │      .--.                                  │
-    │     |o_o |                                 │
-    │     |:_/ |                                 │
-    │    //   \ \                                │
-    │   (|     | )                               │
-    │  /'_/\   _/`\                              │
-    │  \___)=(___/                               │
-    └────────────────────────────────────────────┘
-    </pre>
-    
-    <pre class="content">
-    ┌──────────[ $ exit ]───────────────────────┐
-    │ Contact : leo.lelonggoncalves@yahoo.com   │
-    │ tel : 06.77.85.24.48                      │
-    │                                           │
-    └───────────────────────────────────────────┘
-    </pre>
-           
-    <pre class="content">
-        __/\\\________/\\\____________________________________                     
-        _\/\\\_______\/\\\______________________________________                  
-         _\//\\\______/\\\___/\\\_________________________________                   
-          __\//\\\____/\\\___\///___/\\\____/\\\_____/\\\\\\\\_____                  
-           ___\//\\\__/\\\_____/\\\_\//\\\__/\\\____/\\\/////\\\____                 
-            ____\//\\\/\\\_____\/\\\__\//\\\/\\\____/\\\\\\\\\\\______                
-             _____\//\\\\\______\/\\\___\//\\\\\____\//\\///////________               
-              ______\//\\\_______\/\\\____\//\\\______\//\\\\\\\\\\_______              
-               _______\///________\///______\///________\//////////_________             
-           __/\\\_____________________________________________________________        
-            _\/\\\_____________________________________________________________       
-             _\/\\\______________/\\\___________________________________________      
-              _\/\\\_____________\///___/\\/\\\\\\____/\\\____/\\\__/\\\____/\\\_     
-               _\/\\\______________/\\\_\/\\\////\\\__\/\\\___\/\\\_\///\\\/\\\/__    
-                _\/\\\_____________\/\\\_\/\\\__\//\\\_\/\\\___\/\\\___\///\\\/____   
-                 _\/\\\_____________\/\\\_\/\\\___\/\\\_\/\\\___\/\\\____/\\\/\\\___  
-                  _\/\\\\\\\\\\\\\\\_\/\\\_\/\\\___\/\\\_\//\\\\\\\\\___/\\\/\///\\\_ 
-                   _\///////////////__\///__\///____\///___\/////////___\///____\///__
-                   ____________________/\\\\\\\\\\____________________________________         
-                    ___________/\\\___/\\\///////\\\_________________________________        
-                     ________/\\\//___\///______/\\\_______________________________       
-                      _____/\\\//_____________/\\\//______________________________      
-                       __/\\\//_______________\////\\\___________________________     
-                        _\////\\\_________________\//\\\________________________    
-                        ____\////\\\_____/\\\______/\\\________________________   
-                         _______\////\\\_\///\\\\\\\\\/________________________  
-                          __________\///____\/////////________________________ 
-        </pre>
-            </div>
-        </div>
+<!-- Section : ls -l compétences -->
+<div class="terminal-section">
+    <div class="command">$ cat compétences</div>
+   
+        <p>Réseaux :</p>
+        <p>- Configuration et gestion des VLAN, DHCP, DNS</p>
+        <p>- Routage, NAT, VPN (WireGuard, OpenVPN)</p>
+        <p>- Pare-feu et filtrage (iptables, pfSense)</p>
+        <p>- Supervision réseau (Zabbix, Nagios)</p>
+        <p></p>
+        <p>Systèmes :</p>
+        <p>- Administration Linux (Debian, Ubuntu, CentOS)</p>
+        <p>- Gestion des services Windows Server</p>
+        <p>- Automatisation (Bash, PowerShell, Ansible)</p>
+        <p>- Gestion des utilisateurs, sauvegardes</p>
+        <p></p>
+        <p>Virtualisation & Cloud :</p>
+        <p>- Hyperviseurs : Proxmox, VMware, Hyper-V</p>
+        <p>- Conteneurisation : Docker, Kubernetes</p>
+        <p>- Déploiement cloud (AWS, Azure)</p>
+        <p></p>
+        <p>Sécurité :</p>
+        <p>- Configuration et durcissement des systèmes</p>
+        <p>- Gestion des accès et authentification (LDAP)</p>
+        <p>- Analyse des logs et détection d’intrusion</p>
+        <p>- Pentesting (bases) avec Kali Linux</p>
+        <p></p>
+        <p>Développement & Automatisation :</p>
+        <p>- Scripting : Bash, PowerShell, Python (bases)</p>
+        <p>- Gestion des configurations (Ansible)</p>
+        <p>- CI/CD : Git, Docker, pipelines GitHub</p>
+        <p></p>
+        <p>Soft Skills & Gestion de Projet :</p>
+        <p>- Rédaction de documentation technique</p>
+        <p>- Travail en équipe et gestion des incidents</p>
+        <p>- Veille technologique et adaptation rapide</p>
     </div>
+</div>
+<br>
 </body>
 </html>
+
