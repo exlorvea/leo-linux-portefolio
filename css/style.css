@@ -109,7 +109,7 @@ pre {
 
 /* contenu du site */
 .content {
-    margin-top: 3px;
+    margin-top: 2px;
     font-size: 14px;
     line-height: 1.4;
     white-space: pre-wrap;
@@ -146,4 +146,3 @@ pre {
 .terminal-section {
     margin: 10px; /* Assure-toi que les marges sont fixes */
 }
-
