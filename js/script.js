@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "[OK] Loading kernel modules...",
         "[INFO] Checking file system integrity...",
         "[SUCCESS] System startup complete. Welcome!"
-        "oui c'est un test"
     ];
 
     if (!terminalSection) {
@@ -56,4 +55,3 @@ function typeEffect(element, lines, speed) {
     }
     type();
 }
-
