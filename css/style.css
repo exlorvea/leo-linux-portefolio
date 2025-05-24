@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 12, 0, 0.8),
+        rgba(0, 6, 0, 0.8)
+    ),
+    url("../images/scanlinesb.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+
+    /* Corrigé ici : */
+    overflow: auto;   /* autorise le scroll + clics */
+    height: auto;     /* adapte à la taille réelle du contenu */
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh; /* au lieu de height: 100vh */
+}
+
+
+pre {
+    margin: 0;
+    line-height: 1.2;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.toggle {
+    color: lime;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline; /* Changé de block à inline pour rester dans le flux */
+}
+
+.toggle:hover {
+    text-decoration: underline;
+}
+
+.index {
+    color: lime;
+    text-decoration: none;
+}
+
+.index:hover {
+    background-color: lime;
+    color: black;
+}
+.terminal-window p {
+    font-family: 'Courier New', Courier, monospace;
+    color: lime;
+    margin: 0;
+    white-space: pre-wrap; /* Permet la mise en page ASCII sans tout casser */
+}
+
+#menuSection,
+#cvSection,
+#portfolioSection,
+#veilleSection {
+    margin-left: 0px; /* Décalage pour l'arborescence */
+}
+
+.hidden {
+    display: none;
+}
+
+.toggle {
+    cursor: pointer;
+    color: lime;
+    text-decoration: none;
+}
+
+/* Loader */
+#loader {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all; /* <- pour bloquer les clics pendant le chargement */
+}
+
+#logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+#loader-messages-container {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    text-align: left;
+    width: 50%;
+      /* AJOUTS : */
+      display: block;
+      max-height: 1000080vh;
+      overflow: hidden;
+      position: relative;
+}
+
+
+#loader-messages {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: #00ff00;
+    line-height: 1.4;
+}
+/*bar l'oader */
+#bar-loader-messages-container {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    text-align: left;
+    width: 50%;
+}
+.bar-loader-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* prend toute la hauteur de l'écran */
+  width: 100vw;
+}
+
+.bar-loader-logo {
+  max-width: 15%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.bar-loader-bar {
+  width: 60%;
+  height: 24px;
+  border: 2px solid lime;
+  background: transparent;
+  position: relative;
+}
+
+.bar-loader-fill {
+  height: 100%;
+  width: 0%;
+  background-color: lime;
+}
+
+  
+/* contenu du site */
+.content {
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    padding-left: 10px;
+    position: relative;
+    position: relative;
+    z-index: 1; /* S'assure que c’est bien au-dessus une fois loader retiré */
+    pointer-events: auto;
+}
+
+.command {
+    font-family: monospace;
+    color: lime;
+    background-color: transparent;
+    margin: 0;
+    padding: 5px 0;
+    padding-left: 10px;
+}
+
+.cadre {
+    position: absolute;    /* Ou "fixed" si tu veux qu’il reste en place */
+    left: 10;               /* Aligne à gauche */
+    width: 40%px;          /* Largeur du cadre */
+    border: 1px solid lime; /* Bordure verte */
+    padding: 10px;         /* Espace intérieur */
+    color: lime;           /* Texte vert */
+    font-family: monospace; /* Police style terminal */
+}
+
+.hidden {
+    display: none;
+}
+
+#mainContent {
+    margin: 20px; /* Ou toute valeur que tu veux */
+}
+
+.terminal-section {
+    margin: 10px; /* Assure-toi que les marges sont fixes */
+}
+
