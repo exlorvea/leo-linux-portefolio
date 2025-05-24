@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body, html {
+  margin: 0;
+  font: bold 2vw/1.4 'Open Sans', arial, sans-serif;
+}
+
+ul {
+  margin: 100 auto 0;
+  padding: 0;
+  list-style: none;
+  width: 100%; 
+  text-align: center;
+}
+
+li {
+  display: table-cell;
+  position: relative;
+
+  padding: 1vw 0; 
+}
+
+a {
+  color: #353434;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 1vw 1.5vw; 
+  position: relative;
+}
+
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 4vw; 
+  }
+}
+
+

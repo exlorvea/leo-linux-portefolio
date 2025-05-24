@@ -1,0 +1,20 @@
+<div class="masthead">
+
+
+
+
+
+
+
+
+<dds-masthead-container data-endpoint="/common/carbon-for-ibm-dotcom/translations/masthead-footer/v2" auth-method="profile-api" has-contact="false" has-profile="true" style="z-index: 900;"><!---->  <dds-masthead data-autoid="dds--masthead" style="transition: none 0s ease 0s; top: 0px;"> <dds-skip-to-content href="#main-content" link-assistive-text="Skip to content" role="navigation" slot="brand" aria-label="Skip to content"></dds-skip-to-content>   <dds-masthead-logo href="https://www.ibm.com/fr-fr" data-autoid="dds--masthead-logo" size="" slot="brand"><!----><!----></dds-masthead-logo>    <dds-top-nav selected-menu-item="undefined" data-autoid="dds--masthead__l0-nav"> <!----> <dds-megamenu-top-nav-menu menu-label="Produits" trigger-content="Produits" data-autoid="dds--masthead__l0-nav--nav0" style="--dds-ce--viewport-width: 1110px;"><!----><!----></dds-megamenu-top-nav-menu> <!----> <dds-megamenu-top-nav-menu menu-label="Solutions" trigger-content="Solutions" data-autoid="dds--masthead__l0-nav--nav1" style="--dds-ce--viewport-width: 1110px;"><!----><!----></dds-megamenu-top-nav-menu> <!----> <dds-megamenu-top-nav-menu menu-label="Consulting" trigger-content="Consulting" data-autoid="dds--masthead__l0-nav--nav2" style="--dds-ce--viewport-width: 1110px;"><!----><!----></dds-megamenu-top-nav-menu> <!----> <dds-megamenu-top-nav-menu menu-label="Support" trigger-content="Support" data-autoid="dds--masthead__l0-nav--nav3" style="--dds-ce--viewport-width: 1110px;"><!----><!----></dds-megamenu-top-nav-menu> <!----> <dds-megamenu-top-nav-menu menu-label="En savoir plus" trigger-content="En savoir plus" data-autoid="dds--masthead__l0-nav--nav4" style="--dds-ce--viewport-width: 1110px;"><!----><!----></dds-megamenu-top-nav-menu> <!----> </dds-top-nav>   <dds-search-with-typeahead input-timeout="200" data-autoid="dds--search-with-typeahead" color-scheme="" size="" type="" value="" slot="search" language="fr-fr"></dds-search-with-typeahead>  <dds-masthead-global-bar data-autoid="dds--masthead-global-bar" slot="profile">   <dds-masthead-profile data-autoid="dds--masthead-profile"> <!----> <dds-masthead-profile-item href="https://myibm.ibm.com/dashboard/?lnk=mmi_frfr" role="listitem"><!---->Mon compte IBM<!----></dds-masthead-profile-item> <!----> <dds-masthead-profile-item href="https://login.ibm.com/oidc/endpoint/default/authorize?redirect_uri=https%3A%2F%2Fmyibm.ibm.com%2FOIDCHandler.html&amp;response_type=token&amp;client_id=v18LoginProdCI&amp;scope=openid&amp;state=https%3A%2F%2Fwww.ibm.com%2Ffr-fr&amp;nonce=8675309" role="listitem"><!---->Se connecter<!----></dds-masthead-profile-item> <!----> </dds-masthead-profile>   </dds-masthead-global-bar>  <dds-megamenu-overlay></dds-megamenu-overlay> </dds-masthead> <!----></dds-masthead-container>
+
+
+
+
+<script src="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v2/alpha/masthead.min.js" type="module"></script>
+
+
+
+
+</div>

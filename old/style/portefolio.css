@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../image/carte1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.container {
+    
+    background-color: rgba(26, 26, 46, 0.747); 
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center; 
+    align-items: center;
+    height: 100%; /* Ajuste la hauteur de la page à la fenêtre */
+}
+
+.menu {
+    margin: 20px;
+    font-size: 55px;
+    white-space: normal;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #3d3d58;
+    color: #fff;
+    border-radius: 5px;
+    font-size:30px;
+    display: block;
+}
+h1 {
+    font-size: 55px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(255, 120, 120)
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 20px;
+    color: rgb(165, 165, 165);
+    text-decoration: underline;
+}
+
+ul.ulul {
+    list-style-type: disc;
+    margin-left: 0px;
+}
+
+li.lili {
+    font-size: 30px;
+    margin-bottom: 0px;
+    font-style: italic;
+    line-height: 1.1;
+    text-align: left;
+}
+
+a.ouioui {
+    color: rgb(106, 106, 236); /* Couleur lien */
+    text-decoration: underline;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
