@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Léo Linux project R3ST0.FR GLPI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script_BareDeChargement.js" defer></script>
+    <link rel="icon" href="images/LLG.png" type="image/png">        <!-- icon site -->
+
+</head>
+<body>
+    <div class="container">
+        <!-- Section du chargement -->
+        <div id="loader">
+            <div id="bar-loader-messages-container">
+                <div id="loader-messages"></div>
+            </div>
+        </div>
+        
+
+        <!-- menu -->
+        <div id="mainContent" class="hidden">
+            <div class="terminal-window">
+                <h1>
+                    <a href="menu.html"><img src="images/LLG.png" alt="logo LLG"></a> |Portfolio Léo Linux|R3ST0.FR GLPI|
+                </h1>
+        
+                <!-- Menu principal -->
+                <a href="javascript:void(0);" class="toggle" onclick="toggleSection('menuSection')"> > menu </a>
+                <div id="menuSection" class="hidden">
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('cvSection')">CV</a></p>
+                    <div id="cvSection" class="hidden">
+                        <p>│   └── <a href="cv.html" class="index">mon CV</a></p>
+                    </div>
+        
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('portfolioSection')">Portfolio</a></p>
+                    <div id="portfolioSection" class="hidden">
+                        <p>│   ├── <a href="portfolio.html" class="index">page des projets</a></p>
+                        <p>│   ├── <a href="projet_boxtobed.html" class="index">Projet BoXTOBed</a></p>
+                        <p>│   ├── <a href="projet_Gourmet&Co.html" class="index">Projet Gourmet&Co</a></p>
+                        <p>│   ├── <a href="projet_TechUniverse.html" class="index">Projet TechUniverse</a></p>
+                        <p>│   ├── <a href="projet_r3st0_ad_dhcp_tftp.html" class="index">Projet R3st0.fr ad dhcp tftp</a></p>
+                        <p>│   ├── <a href="projet_r3st0_GLPI.html" class="index">Projet R3st0.fr GLPI</a></p>
+                        <p>│   ├── <a href="projet_r3st0_NEXTCLOUD.html" class="index">Projet R3st0.fr NEXTCLOUD</a></p>
+                        <p>│   ├── <a href="projet_r3st0_SRV_DE_FICHIER.html" class="index">Projet SRV de Fichiers</a></p>
+                        <p>│   └── <a href="portfolio-1.html" class="index">Projet Portfolio</a></p>
+                    </div>
+        
+                    <p>└── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('veilleSection')">Veille Technologique</a></p>
+                    <div id="veilleSection" class="hidden">
+                        <p>    ├── <a href="veille.html" class="index">ma veille Technologique</a></p>
+                        <p>    └── <a href="veille_rss.html" class="index">Flux RSS – Cybersécurité en temps réel</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contenu principal -->
+
+<pre>----------------------------------------------</pre>
+<div class="terminal-section">
+  <div class="command">$ cat projet_glpi</div>
+  <h3 style="margin: 0;">PROJET : Intégration de GLPI - r3st0.fr</h3>
+  <div>Réalisé : 2024</div>
+  <div>Projet BTS SIO - SISR</div>
+  <p></p>
+
+  <div>╔════════════════════╗</div>
+  <div>║ CONTEXTE DU PROJET ║</div>
+  <div>╚════════════════════╝</div>
+  <div>R3ST0.fr faisait face à une gestion du SI désorganisée (fichiers Excel, tickets non tracés).</div>
+  <div>Objectif : centraliser la gestion du parc et des demandes avec GLPI.</div>
+  <p></p>
+
+  <div>╔═══════════════════════════════╗</div>
+  <div>║ MISSION – DÉPLOIEMENT DE GLPI ║</div>
+  <div>╚═══════════════════════════════╝</div>
+  <div>✔ Installation de GLPI sur Debian 11 (SRV-GLPI)</div>
+  <div>✔ Configuration d’Apache, MariaDB et des prérequis PHP</div>
+  <div>✔ Inventaire manuel + automatique (GLPI Agent)</div>
+  <div>✔ Gestion des droits, profils, équipes et tickets</div>
+  <div>✔ Portail Self-Service + intégration LDAP AD</div>
+  <p></p>
+
+  <div>╔═════════════════════╗</div>
+  <div>║ TESTS / VALIDATIONS ║</div>
+  <div>╚═════════════════════╝</div>
+  <div>✔ Remontée des machines et tickets OK</div>
+  <div>✔ Authentification LDAP fonctionnelle</div>
+  <div>✔ Accès restreints bien configurés</div>
+  <p></p>
+
+  <div>╔══════════════════╗</div>
+  <div>║ BONNES PRATIQUES ║</div>
+  <div>╚══════════════════╝</div>
+  <div>✔ Droits par profils et équipes</div>
+  <div>✔ Respect du principe du moindre privilège</div>
+  <div>✔ Documentation complète des paramètres</div>
+  <p></p>
+
+  <div>╔═══════════════╗</div>
+  <div>║ BILAN / RETEX ║</div>
+  <div>╚═══════════════╝</div>
+  <div>✔ GLPI offre une visibilité claire du SI</div>
+  <div>✔ Gain de temps pour les demandes utilisateurs</div>
+  <div>✔ Prêt à l’intégration en environnement réel</div>
+  <p></p>
+
+  <pre>================================================================</pre>
+  <div>╔════════════════════════╗</div>
+  <div>║ VERSION PDF DISPONIBLE ║</div>
+  <div>╚════════════════════════╝</div>
+  <div>> Visualiser ou télécharger le fichier :</div>
+  ↳ <a href="documents/rapport_R3ST0_FR_GLPI.pdf" target="_blank" class="index">Rapport GLPI - PDF</a>
+  <p><em>---------------------------------------</em></p>
+  <p><em>_no ticket, no problem._</em></p>
+</div>

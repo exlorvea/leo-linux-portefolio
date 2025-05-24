@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Léo Linux veille</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script_BareDeChargement.js" defer></script>
+    <link rel="icon" href="images/LLG.png" type="image/png">        <!-- icon site -->
+
+</head>
+<body>
+    <div class="container">
+        <!-- Section du chargement -->
+        <div id="loader">
+            <div id="bar-loader-messages-container">
+                <div id="loader-messages"></div>
+            </div>
+        </div>
+        
+
+        <!-- menu -->
+        <div id="mainContent" class="hidden">
+            <div class="terminal-window">
+                <h1>
+                    <a href="menu.html"><img src="images/LLG.png" alt="logo LLG"></a> |Portfolio Léo Linux|VEILLE TECHNOLOGIQUE ALERTE EN TEMPS REEL|
+                </h1>
+        
+                <!-- Menu principal -->
+                <a href="javascript:void(0);" class="toggle" onclick="toggleSection('menuSection')"> > menu </a>
+                <div id="menuSection" class="hidden">
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('cvSection')">CV</a></p>
+                    <div id="cvSection" class="hidden">
+                        <p>│   └── <a href="cv.html" class="index">mon CV</a></p>
+                    </div>
+        
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('portfolioSection')">Portfolio</a></p>
+                    <div id="portfolioSection" class="hidden">
+                        <p>│   ├── <a href="portfolio.html" class="index">page des projets</a></p>
+                        <p>│   ├── <a href="projet_boxtobed.html" class="index">Projet BoXTOBed</a></p>
+                        <p>│   ├── <a href="projet_Gourmet&Co.html" class="index">Projet Gourmet&Co</a></p>
+                        <p>│   ├── <a href="projet_TechUniverse.html" class="index">Projet TechUniverse</a></p>
+                        <p>│   ├── <a href="projet_r3st0_ad_dhcp_tftp.html" class="index">Projet R3st0.fr ad dhcp tftp</a></p>
+                        <p>│   ├── <a href="projet_r3st0_GLPI.html" class="index">Projet R3st0.fr GLPI</a></p>
+                        <p>│   ├── <a href="projet_r3st0_NEXTCLOUD.html" class="index">Projet R3st0.fr NEXTCLOUD</a></p>
+                        <p>│   ├── <a href="projet_r3st0_SRV_DE_FICHIER.html" class="index">Projet SRV de Fichiers</a></p>
+                        <p>│   └── <a href="portfolio-1.html" class="index">Projet Portfolio</a></p>
+                    </div>
+        
+                    <p>└── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('veilleSection')">Veille Technologique</a></p>
+                    <div id="veilleSection" class="hidden">
+                        <p>    ├── <a href="veille.html" class="index">ma veille Technologique</a></p>
+                        <p>    └── <a href="veille_rss.html" class="index">Flux RSS – Cybersécurité en temps réel</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- Contenu principal -->
+    <pre>---------------------------------------</pre>
+  <style>
+    body {
+      background-color: black;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+      line-height: 1.2;
+    }
+    h1, h2 {
+      color: #00ff00;
+      border-bottom: 1px solid #00ff00;
+      padding-bottom: 2px;
+      margin: 10px 0 5px;
+    }
+
+    .terminal-section {
+      margin-bottom: 20px;
+    }
+
+    .command {
+      color: #00ff00;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .intro {
+      margin-left: 2ch;
+      margin-bottom: 10px;
+    }
+
+    .reload-button {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 4px 8px;
+      font-family: 'Courier New', monospace;
+      background-color: black;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      cursor: pointer;
+    }
+
+    .reload-button:hover {
+      background-color: #00ff00;
+      color: black;
+    }
+
+    .rss-entry {
+      margin-bottom: 6px;
+    }
+
+    .rss-entry-title {
+      display: inline;
+    }
+
+    .rss-entry-title::before {
+      content: "- ";
+      color: #00ff00;
+    }
+
+    .rss-entry-date {
+      color: #888888;
+      font-size: 0.9em;
+      margin-left: 8px;
+    }
+
+    .rss-entry-desc {
+      padding-left: 2ch;
+      color: #00ff00;
+    }
+
+    .rss-entry-desc::before {
+      content: "↳ ";
+      color: #aaaaaa;
+    }
+
+    .severity-high a { color: #ff4444; font-weight: bold; }
+    .severity-medium a { color: #ffaa00; font-weight: bold; }
+    .severity-low a { color: #ffff00; font-weight: bold; }
+
+    a:hover {
+      color: #00ffff;
+      text-decoration: underline;
+    }
+
+    .flux-block {
+      margin-bottom: 15px;
+    }
+
+#loading-bar {
+  font-family: 'Courier New', monospace;
+  color: #00ff00;
+  padding: 10px 0;
+  display: none;
+  width: 100%;
+  font-size: 1.2rem;
+  white-space: pre;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+
+    #rss-content {
+      display: none;
+    }
+  </style>
+
+
+<div class="terminal-section">
+  <div class="command">$ cat veille_rss</div>
+  <div class="intro">
+    Cette page affiche une veille automatisée des dernières alertes en cybersécurité via flux RSS.<br>
+    Les éléments sont triés par niveau de gravité, du plus critique au plus bénin. Cliquez sur un titre pour accéder à la source.<br><br>
+    Pour les moins attentifs : <br>
+    - <span style="color: #ff4444; font-weight: bold;">rouge</span> = critique<br>
+    - <span style="color: #ffaa00; font-weight: bold;">orange</span> = élevé<br>
+    - <span style="color: #ffff00; font-weight: bold;">jaune</span> = faible<br>
+    Un bouton intitulé <strong><code>$ systemctl restart rss.service</code></strong> est disponible pour recharger les informations à tout moment.  Sinon, l’option F5 reste un grand classique qui fonctionne toujours.<br>
+  </div>
+  <button class="reload-button" onclick="startLoadingSequence()">$ systemctl restart rss.service</button>
+</div>
+
+<div id="loading-bar">$ systemctl restart rss.service → [          ]</div>
+
+<div id="rss-content">
+  <div class="flux-block">
+    <h2>[CERT-FR]</h2>
+    <div id="rss-cert"></div>
+  </div>
+  <div class="flux-block">
+    <h2>[Vulners - CVE]</h2>
+    <div id="rss-cve"></div>
+  </div>
+  <div class="flux-block">
+    <h2>[The Hacker News]</h2>
+    <div id="rss-hn"></div>
+  </div>
+</div>
+
+<script>
+  function getSeverity(text) {
+    text = text.toLowerCase();
+    if (text.includes("critical") || text.includes("critique") || text.includes("rce") || text.includes("remote code execution")) return 3;
+    if (text.includes("high") || text.includes("important") || text.includes("escalade") || text.includes("élévation")) return 2;
+    return 1;
+  }
+
+  function severityClass(sev) {
+    if (sev === 3) return 'severity-high';
+    if (sev === 2) return 'severity-medium';
+    return 'severity-low';
+  }
+
+  function loadFeed(containerId, feedUrl) {
+    return fetch("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feedUrl))
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById(containerId);
+        container.innerHTML = '';
+        const entries = data.items.slice(0, 10).map(item => {
+          const desc = item.description.replace(/<[^>]*>/g, '').split('. ')[0].trim();
+          const pubDate = new Date(item.pubDate).toISOString().split('T')[0];
+          const severity = getSeverity(item.title + " " + desc);
+          return {
+            title: item.title,
+            link: item.link,
+            desc: desc,
+            date: pubDate,
+            severity: severity,
+            severityClass: severityClass(severity)
+          };
+        });
+        entries.sort((a, b) => b.severity - a.severity);
+        entries.forEach(entry => {
+          const div = document.createElement("div");
+          div.className = "rss-entry";
+          div.innerHTML = `
+            <div class="rss-entry-title ${entry.severityClass}">
+              <a href="${entry.link}" target="_blank">${entry.title}</a>
+              <span class="rss-entry-date">[${entry.date}]</span>
+            </div>
+            <div class="rss-entry-desc">${entry.desc}.</div>
+          `;
+          container.appendChild(div);
+        });
+      });
+  }
+
+function startLoadingSequence() {
+  const loadingBar = document.getElementById("loading-bar");
+  const rssContent = document.getElementById("rss-content");
+
+  const total = 60;
+  let step = 0;
+
+  rssContent.style.display = "none";
+  loadingBar.style.display = "block";
+
+  const interval = setInterval(() => {
+    const filled = "█".repeat(step);
+    const empty = " ".repeat(total - step);
+    loadingBar.textContent = `$ systemctl restart rss.service → [${filled}${empty}]`;
+    step++;
+
+    if (step > total) {
+      clearInterval(interval);
+      loadingBar.style.display = "none";
+      rssContent.style.display = "block";
+      reloadFeeds();
+    }
+  }, 50); // 60 steps x 50ms = 3s
+}
+
+  function reloadFeeds() {
+    loadFeed("rss-cert", "https://www.cert.ssi.gouv.fr/feed/");
+    loadFeed("rss-cve", "https://vulners.com/rss.xml");
+    loadFeed("rss-hn", "https://feeds.feedburner.com/TheHackersNews");
+  }
+
+  window.onload = () => {
+    startLoadingSequence();
+  };
+</script>
+
+</body>
+</html>

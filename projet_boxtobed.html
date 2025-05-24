@@ -1,0 +1,154 @@
+<!-- Fichier : projet_boxtobed.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Léo Linux PROJET BOXTOBED</title>        <!-- titre site -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script_BareDeChargement.js" defer></script>
+    <link rel="icon" href="images/LLG.png" type="image/png">        <!-- icon site -->
+
+</head>
+<body>
+    <div class="container">
+        <!-- Section du chargement -->
+        <div id="loader">
+            <div id="bar-loader-messages-container">
+                <div id="loader-messages"></div>
+            </div>
+        </div>
+        
+
+        <!-- menu -->
+        <div id="mainContent" class="hidden">
+            <div class="terminal-window">
+                <h1>
+                    <a href="menu.html"><img src="images/LLG.png" alt="logo LLG"></a> |Portfolio Léo Linux|PROJET BOXTOBED|
+                </h1>
+        
+                <!-- Menu principal -->
+                <a href="javascript:void(0);" class="toggle" onclick="toggleSection('menuSection')"> > menu </a>
+                <div id="menuSection" class="hidden">
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('cvSection')">CV</a></p>
+                    <div id="cvSection" class="hidden">
+                        <p>│   └── <a href="cv.html" class="index">mon CV</a></p>
+                    </div>
+        
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('portfolioSection')">Portfolio</a></p>
+                    <div id="portfolioSection" class="hidden">
+                        <p>│   ├── <a href="portfolio.html" class="index">page des projets</a></p>
+                        <p>│   ├── <a href="projet_boxtobed.html" class="index">Projet BoXTOBed</a></p>
+                        <p>│   ├── <a href="projet_Gourmet&Co.html" class="index">Projet Gourmet&Co</a></p>
+                        <p>│   ├── <a href="projet_TechUniverse.html" class="index">Projet TechUniverse</a></p>
+                        <p>│   ├── <a href="projet_r3st0_ad_dhcp_tftp.html" class="index">Projet R3st0.fr ad dhcp tftp</a></p>
+                        <p>│   ├── <a href="projet_r3st0_GLPI.html" class="index">Projet R3st0.fr GLPI</a></p>
+                        <p>│   ├── <a href="projet_r3st0_NEXTCLOUD.html" class="index">Projet R3st0.fr NEXTCLOUD</a></p>
+                        <p>│   ├── <a href="projet_r3st0_SRV_DE_FICHIER.html" class="index">Projet SRV de Fichiers</a></p>
+                        <p>│   └── <a href="portfolio-1.html" class="index">Projet Portfolio</a></p>
+                    </div>
+        
+                    <p>└── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('veilleSection')">Veille Technologique</a></p>
+                    <div id="veilleSection" class="hidden">
+                        <p>    ├── <a href="veille.html" class="index">ma veille Technologique</a></p>
+                        <p>    └── <a href="veille_rss.html" class="index">Flux RSS – Cybersécurité en temps réel</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- Contenu principal -->
+        <pre>----------------------------------------------</pre>
+        <div class="terminal-section">
+            <div class="command">$ cat projet_boxtobed</div>
+            <h3 style="margin: 0;">PROJET : Modernisation du SI - BOXTOBED</h3>
+            <div>Réalisé : Avril - Mai 2025</div>
+            <div>Projet BTS SIO - SISR</div>
+<p></p>
+
+            <div>╔═══════════════════╗</div>
+            <div>║ CONTEXTE DU PROJE ║</div>
+            <div>╚═══════════════════╝</div>
+            <div>BOXTOBED est une chaîne d'hôtels à conteneurs souhaitant moderniser son SI.</div>
+            <div>Projet mené avec l'ESN INFOSUR sur une maquette virtuelle.</div>
+<p></p>
+
+            <div>╔════════════════════════════╗</div>
+            <div>║ MISSION 1 – RÉSEAU ET DHCP ║</div>
+            <div>╚════════════════════════════╝</div>
+            <div>✔ Création de deux VLAN :</div>
+            <div>  - VLAN 10 : utilisateurs – 192.168.10.0/24</div>
+            <div>  - VLAN 100 : datacenter – 192.168.100.0/24</div>
+            <div>✔ Configuration du switch Cisco :</div>
+            <div>  - Ports d'accès et trunk</div>
+            <div>✔ Déploiement du serveur DHCP sur SRV-DHCP</div>
+            <div>  - Étendue 192.168.10.100–200</div>
+            <div>  - Relay DHCP via ip helper-address sur le routeur</div>
+<p></p>
+
+            <div>╔══════════════════════════════════════════╗</div>
+            <div>║ MISSION 2 – IMPORT AUTOMATIQUE DANS L’AD ║</div>
+            <div>╚══════════════════════════════════════════╝</div>
+            <div>✔ Script PowerShell développé (import_users.ps1)</div>
+            <div>  - Lecture d’un CSV généré chaque jour à 6h</div>
+            <div>  - Création des utilisateurs dans Active Directory si non existants</div>
+            <div>✔ Ajout d'une tâche planifiée à 6h10 chaque jour</div>
+            <div>✔ Gestion des doublons, mot de passe initial, OU par service</div>
+<p></p>
+
+            <div>╔═════════════════════════════╗</div>
+            <div>║ MISSION 3 – SAUVEGARDE TFTP ║</div>
+            <div>╚═════════════════════════════╝</div>
+            <div>✔ Déploiement d’un serveur Debian 12 (SRV-TFTP)</div>
+            <div>✔ Installation de tftpd-hpa et configuration sécurisée</div>
+            <div>✔ Répertoire /srv/tftp en droits d’écriture pour les équipements</div>
+            <div>✔ Exemple de sauvegarde :</div>
+            <div>  - Commande Cisco : copy running-config tftp:</div>
+            <div>  - IP TFTP : 192.168.100.30 → fichier reçu et archivé</div>
+<p></p>
+
+            <div>╔════════════════════════════╗</div>
+            <div>║ MISSION 4 – STRATÉGIES GPO ║</div>
+            <div>╚════════════════════════════╝</div>
+            <div>✔ Création de plusieurs GPO sur SRV-ADBOXTOBED :</div>
+            <div>  - Mot de passe complexe (≥10 caractères)</div>
+            <div>  - Fond d’écran d’entreprise (fond.jpg)</div>
+            <div>  - BgInfo : infos système sur le bureau</div>
+            <div>  - Interdiction de regedit</div>
+            <div>  - Raccourcis par groupe : calculatrice (vente), bloc-notes (marketing)</div>
+            <div>  - Redémarrage obligatoire après MAJ</div>
+<p></p>
+
+            <div>╔═════════════════════╗</div>
+            <div>║ TESTS / VALIDATIONS ║</div>
+            <div>╚═════════════════════╝</div>
+            <div>✔ DHCP : les machines reçoivent bien une IP</div>
+            <div>✔ Script PowerShell : import correct sans doublons</div>
+            <div>✔ Sauvegarde switch : fichier TFTP confirmé</div>
+            <div>✔ GPO : toutes appliquées selon les groupes cibles</div>
+<p></p>
+
+            <div>╔═══════════════╗</div>
+            <div>║ BILAN / RETEX ║</div>
+            <div>╚═══════════════╝</div>
+            <div>✔ Projet complet, toutes les missions validées</div>
+            <div>✔ Mise en pratique de compétences réseau, système et script</div>
+            <div>✔ Difficulté rencontrée : configuration du DHCP relay</div>
+            <div><em>Un projet formateur sur l’ensemble de la chaîne SI</em></div>
+<p></p>
+
+            <pre>================================================================</pre>
+               
+        <div>╔════════════════════════╗</div>
+        <div>║ VERSION PDF DISPONIBLE ║</div>
+        <div>╚════════════════════════╝</div>
+        <div>> Visualiser ou télécharger le fichier :</div>
+          ↳ <a href="documents/raport_BOXTOBED.pdf" target="_blank" class="index">Rapport BOXTOBED - PDF</a>
+        
+        
+    <p><em>---------------------------------------</em></p>
+    <p><em>_Use the source, read the man, trust the penguin._</em></p>
+        </div>
+    </div>
+</body>
+</html>

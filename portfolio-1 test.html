@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Léo Linux Ancien Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script_BareDeChargement.js" defer></script>
+    <link rel="icon" href="images/LLG.png" type="image/png">        <!-- icon site -->
+
+</head>
+<body>
+    <div class="container">
+        <!-- Section du chargement -->
+        <div id="loader">
+            <div id="bar-loader-messages-container">
+                <div id="loader-messages"></div>
+            </div>
+        </div>
+        
+
+        <!-- menu -->
+        <div id="mainContent" class="hidden">
+            <div class="terminal-window">
+                <h1>
+                    <a href="menu.html"><img src="images/LLG.png" alt="logo LLG"></a> |Portfolio Léo Linux|Mon vieux portfolio|
+                </h1>
+        
+                <!-- Menu principal -->
+                <a href="javascript:void(0);" class="toggle" onclick="toggleSection('menuSection')"> > menu </a>
+                <div id="menuSection" class="hidden">
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('cvSection')">CV</a></p>
+                    <div id="cvSection" class="hidden">
+                        <p>│   └── <a href="cv.html" class="index">mon CV</a></p>
+                    </div>
+        
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('portfolioSection')">Portfolio</a></p>
+                    <div id="portfolioSection" class="hidden">
+                        <p>│   ├── <a href="portfolio.html" class="index">page des projets</a></p>
+                        <p>│   ├── <a href="projet_boxtobed.html" class="index">Projet BoXTOBed</a></p>
+                        <p>│   ├── <a href="projet_Gourmet&Co.html" class="index">Projet Gourmet&Co</a></p>
+                        <p>│   ├── <a href="projet_TechUniverse.html" class="index">Projet TechUniverse</a></p>
+                        <p>│   ├── <a href="projet_r3st0_ad_dhcp_tftp.html" class="index">Projet R3st0.fr ad dhcp tftp</a></p>
+                        <p>│   ├── <a href="projet_r3st0_GLPI.html" class="index">Projet R3st0.fr GLPI</a></p>
+                        <p>│   ├── <a href="projet_r3st0_NEXTCLOUD.html" class="index">Projet R3st0.fr NEXTCLOUD</a></p>
+                        <p>│   ├── <a href="projet_r3st0_SRV_DE_FICHIER.html" class="index">Projet SRV de Fichiers</a></p>
+                        <p>│   └── <a href="portfolio-1.html" class="index">Projet Portfolio</a></p>
+                    </div>
+        
+                    <p>└── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('veilleSection')">Veille Technologique</a></p>
+                    <div id="veilleSection" class="hidden">
+                        <p>    ├── <a href="veille.html" class="index">ma veille Technologique</a></p>
+                        <p>    └── <a href="veille_rss.html" class="index">Flux RSS – Cybersécurité en temps réel</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- Contenu principal -->
+   <!-- Contenu principal -->
+<!-- Section : PROJET -->
+
+  <style>
+    body {
+      background-color: black;
+      color: #00ff00;
+      font-family: "Courier New", Courier, monospace;
+      padding: 20px;
+    }
+    .command {
+      color: #00ff00;
+      margin-bottom: 10px;
+    }
+    .terminal-box {
+      border: 1px solid #00ff00;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #000;
+    }
+    a {
+      color: #00ff00;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    #iframe-container {
+      display: none;
+      margin-top: 20px;
+      
+    }
+    iframe {
+      width: 100%;
+      height: 900px;
+      border: 1px solid #00ff00;
+      background-color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="command">$ cat old_portfolio_access</div>
+  <div>╔════════════════════════════════════════╗</div>
+  <div>║ ACCÈS À L'ANCIEN PORTFOLIO (2023-2024) ║</div>
+  <div>╚════════════════════════════════════════╝</div>
+  <p>Ce site, c’est mon tout premier portfolio. J’y ai mis du temps, des idées, de l’envie et parfois du code un peu douteux.</p>
+
+  <p>Chaque page a son propre style, parce qu’à l’époque je voulais montrer <strong>tout ce que je savais faire</strong> : des animations ici, un thème sombre là, des effets de flip sur la page de veille technologique (dont je suis encore très fier).</p>
+
+  <p>Mais avec le recul, ce portfolio est aussi un joyeux bazar. La page CV tient grâce à des <code>&lt;p&gt; [U+200E] &lt;/p&gt;</code>, les menus de projets sont... discutables, et certains cadres de présentation sont sortis tout droit de mes pires idées de mise en page.</p>
+
+  <p>Et pourtant, je l’aime.<br>
+  Parce que ce site, <strong>c’est la trace de mes premiers pas, de mes erreurs, de mes tests, et de ma progression</strong>.<br>
+  Il est imparfait, mais sincère.</p>
+
+  <p>Petit clin d’œil perso : la barre de menu du site sont directement inspirées du site d’ <strong>IBM</strong>, parce qu’on respecte les classiques.</p>
+
+  <p>Et le logo ? C’est toujours le même depuis ce jour-là — simplement passé <span style="color: #00ff00;">en vert</span>, comme pour dire : “le terminal, c’est la maison”.</p>
+  <p>D'ailleurs, Winston Churchill disait : « Le succès, c'est d'aller d'échec en échec sans perdre son enthousiasme.", ça résume bien mes portfolios.</p>
+  <div class="terminal-box">
+    > Ce site a été mon tout premier portfolio réalisé en BTS SIO.<br>
+    > Cliquez ci-dessous pour l'ouvrir directement dans cette page :
+    <br><br>
+    <a onclick="document.getElementById('iframe-container').style.display='block'">
+      ▶ Ouvrir l'ancien portfolio dans le terminal
+    </a>
+  </div>
+
+  <div id="iframe-container">
+    <div class="command">$ open old/index.html</div>
+    <iframe src="old/LLG.html"></iframe>
+  </div>
+  <p><em>---------------------------------------</em></p>
+  <p><em>_Broken design, scattered CSS... but it’s mine, and I’m weirdly proud of it._</em></p>
+  <p><em>_My Frankenstein of a site. Ugly, confused, but full of heart._</em></p>
+  <p><em>_Every bad decision in one place — and somehow, I wouldn’t change a thing._</em></p>
+  <p><em>_Laugh all you want. I still smile every time I open it._</em></p>
+</body>
+</html>

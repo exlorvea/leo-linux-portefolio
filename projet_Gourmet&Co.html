@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Léo Linux project Gourmet&Co</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script_BareDeChargement.js" defer></script>
+    <link rel="icon" href="images/LLG.png" type="image/png">        <!-- icon site -->
+
+</head>
+<body>
+    <div class="container">
+        <!-- Section du chargement -->
+        <div id="loader">
+            <div id="bar-loader-messages-container">
+                <div id="loader-messages"></div>
+            </div>
+        </div>
+        
+
+        <!-- menu -->
+        <div id="mainContent" class="hidden">
+            <div class="terminal-window">
+                <h1>
+                    <a href="menu.html"><img src="images/LLG.png" alt="logo LLG"></a> |Portfolio Léo Linux|PROJET Gourmet&Co|
+                </h1>
+        
+                <!-- Menu principal -->
+                <a href="javascript:void(0);" class="toggle" onclick="toggleSection('menuSection')"> > menu </a>
+                <div id="menuSection" class="hidden">
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('cvSection')">CV</a></p>
+                    <div id="cvSection" class="hidden">
+                        <p>│   └── <a href="cv.html" class="index">mon CV</a></p>
+                    </div>
+        
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('portfolioSection')">Portfolio</a></p>
+                    <div id="portfolioSection" class="hidden">
+                        <p>│   ├── <a href="portfolio.html" class="index">page des projets</a></p>
+                        <p>│   ├── <a href="projet_boxtobed.html" class="index">Projet BoXTOBed</a></p>
+                        <p>│   ├── <a href="projet_Gourmet&Co.html" class="index">Projet Gourmet&Co</a></p>
+                        <p>│   ├── <a href="projet_TechUniverse.html" class="index">Projet TechUniverse</a></p>
+                        <p>│   ├── <a href="projet_r3st0_ad_dhcp_tftp.html" class="index">Projet R3st0.fr ad dhcp tftp</a></p>
+                        <p>│   ├── <a href="projet_r3st0_GLPI.html" class="index">Projet R3st0.fr GLPI</a></p>
+                        <p>│   ├── <a href="projet_r3st0_NEXTCLOUD.html" class="index">Projet R3st0.fr NEXTCLOUD</a></p>
+                        <p>│   ├── <a href="projet_r3st0_SRV_DE_FICHIER.html" class="index">Projet SRV de Fichiers</a></p>
+                        <p>│   └── <a href="portfolio-1.html" class="index">Projet Portfolio</a></p>
+                    </div>
+        
+                    <p>└── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('veilleSection')">Veille Technologique</a></p>
+                    <div id="veilleSection" class="hidden">
+                        <p>    ├── <a href="veille.html" class="index">ma veille Technologique</a></p>
+                        <p>    └── <a href="veille_rss.html" class="index">Flux RSS – Cybersécurité en temps réel</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- Contenu principal -->
+    <pre>----------------------------------------------</pre>
+ <!-- Contenu principal -->
+<!-- Section : PROJET -->
+
+<div class="terminal-section">
+    <div class="command">$ cat projet_gourmetandco</div>    
+    <h3 style="margin: 0;">PROJET : Modernisation du SI - Gourmet&Co</h3>
+    <div> Réalisé : Avril - Mai 2025</div>
+    <div> Projet BTS SIO - SISR</div>
+<p></p>
+
+    <div>╔════════════════════╗</div>
+    <div>║ CONTEXTE DU PROJET ║</div>
+    <div>╚════════════════════╝</div>
+    <div>Gourmet&Co est une entreprise bordelaise de distribution alimentaire haut de gamme pour l'hôtellerie-restauration.</div>
+    <div>Elle souhaite sécuriser et centraliser son système d’information tout en facilitant la supervision de son infrastructure réseau.</div>
+<p></p>
+
+    <div>╔══════════════════════════════════════╗</div>
+    <div>║ MISSION 1 – SEGMENTATION RÉSEAU/VLAN ║</div>
+    <div>╚══════════════════════════════════════╝</div>
+    <div>✔ Création de 3 VLAN :</div>
+    <div>  - VLAN 10 (Datacenter) – 192.168.10.0/24</div>
+    <div>  - VLAN 20 (Client LAN) – 192.168.20.0/24</div>
+    <div>  - VLAN 30 (DMZ) – 192.168.30.0/24</div>
+    <div>✔ Configuration du switch Cisco 2960-X :</div>
+    <div>  - Définition des VLANs, ports d’accès et trunk</div>
+    <div>✔ Affectation des VLANs sur le Stormshield et activation du routage inter-VLAN</div>
+    <div>✔ Règles de filtrage pour sécuriser les flux entre zones</div>
+<p></p>
+
+    <div>╔═════════════════════════════════════╗</div>
+    <div>║ MISSION 2 – ACTIVE DIRECTORY & DHCP ║</div>
+    <div>╚═════════════════════════════════════╝</div>
+    <div>✔ Déploiement de SRV-AD-DHCP sous Windows Server 2022</div>
+    <div>✔ Promotion en tant que contrôleur de domaine : domaine gourmet.lan</div>
+    <div>✔ Création d’OU, comptes utilisateurs nominatifs</div>
+    <div>✔ Configuration DHCP pour le VLAN 20 :</div>
+    <div>  - Étendue : 192.168.20.100 à 192.168.20.200</div>
+    <div>  - DNS : 192.168.20.10 – Passerelle : 192.168.20.1</div>
+<p></p>
+
+    <div>╔═════════════════════════════════════╗</div>
+    <div>║ MISSION 3 – DÉPLOIEMENT DE OWNCLOUD ║</div>
+    <div>╚═════════════════════════════════════╝</div>
+    <div>✔ Installation d’un serveur OwnCloud sur Debian 12 (SRV-OWNCLOUD)</div>
+    <div>✔ Configuration Apache2, MariaDB, PHP</div>
+    <div>✔ Création de la base de données : owncloud / ownclouduser</div>
+    <div>✔ Configuration VirtualHost Apache, droits www-data appliqués</div>
+    <div>✔ Intégration LDAP avec l’Active Directory :</div>
+    <div>  - DN : dc=gourmet,dc=lan – Filtre : (objectClass=user)</div>
+    <div>  - Authentification des utilisateurs via AD</div>
+<p></p>
+
+    <div>╔═══════════════════════════════════════╗</div>
+    <div>║ MISSION 4 – SUPERVISION AVEC CENTREON ║</div>
+    <div>╚═══════════════════════════════════════╝</div>
+    <div>✔ Installation de Centreon sur Debian 12 (SRV-CENTREON)</div>
+    <div>✔ Ajout des hôtes :</div>
+    <div>  - SRV-AD-DHCP / SRV-OWNCLOUD / UTM-STORMSHIELD</div>
+    <div>✔ Surveillance des services critiques :</div>
+    <div>  - Ping, HTTP, HTTPS, LDAP, MySQL, Réponse OwnCloud</div>
+    <div>✔ Interface accessible via : http://192.168.10.10/centreon</div>
+<p></p>
+
+    <div>╔═════════════════════╗</div>
+    <div>║ TESTS / VALIDATIONS ║</div>
+    <div>╚═════════════════════╝</div>
+    <div>✔ IP via DHCP bien reçue (VLAN 20)</div>
+    <div>✔ Accès et authentification OwnCloud via AD : OK</div>
+    <div>✔ Supervision Centreon fonctionnelle et fiable</div>
+<p></p>
+
+    <div>╔══════════════════╗</div>
+    <div>║ BONNES PRATIQUES ║</div>
+    <div>╚══════════════════╝</div>
+    <div>✔ Nom de machines standardisé</div>
+    <div>✔ Accès administrateur sécurisé (SSH / RDP)</div>
+    <div>✔ Utilisation des VLAN pour cloisonner les flux</div>
+    <div>✔ Comptes nominatifs pour tous les services</div>
+<p></p>
+
+    <div>╔═══════════════╗</div>
+    <div>║ BILAN / RETEX ║</div>
+    <div>╚═══════════════╝</div>
+    <div>✔ Projet complet validé dans les temps</div>
+    <div>✔ Apprentissage : LDAP, segmentation réseau, supervision</div>
+    <div>✘ Problèmes initiaux sur les VLANs (résolus via pare-feu)</div>
+    <div>✘ Erreur de configuration LDAP corrigée sur OwnCloud</div>
+    <div><em>Une infrastructure robuste, documentée, prête à être déployée en production</em></div>
+<p></p>
+    <pre>================================================================</pre>
+    
+<div>╔════════════════════════╗</div>
+<div>║ VERSION PDF DISPONIBLE ║</div>
+<div>╚════════════════════════╝</div>
+<div>> Visualiser ou télécharger le fichier :</div>
+  ↳ <a href="documents/rapport_Gourmet&co.pdf" target="_blank" class="index">Rapport Gourmet&Co - PDF</a>
+    
+
+<p><em>---------------------------------------</em></p>
+<p><em>_Better infrastructure, better security, better service._</em></p>
+</div>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Léo Linux portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script_BareDeChargement.js" defer></script>
+    <link rel="icon" href="images/LLG.png" type="image/png">        <!-- icon site -->
+
+</head>
+<body>
+    <div class="container">
+        <!-- Section du chargement -->
+        <div id="loader">
+            <div id="bar-loader-messages-container">
+                <div id="loader-messages"></div>
+            </div>
+        </div>
+        
+
+        <!-- menu -->
+        <div id="mainContent" class="hidden">
+            <div class="terminal-window">
+                <h1>
+                    <a href="menu.html"><img src="images/LLG.png" alt="logo LLG"></a> |Portfolio Léo Linux|
+                </h1>
+        
+                <!-- Menu principal -->
+                <a href="javascript:void(0);" class="toggle" onclick="toggleSection('menuSection')"> > menu </a>
+                <div id="menuSection" class="hidden">
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('cvSection')">CV</a></p>
+                    <div id="cvSection" class="hidden">
+                        <p>│   └── <a href="cv.html" class="index">mon CV</a></p>
+                    </div>
+        
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('portfolioSection')">Portfolio</a></p>
+                    <div id="portfolioSection" class="hidden">
+                        <p>│   ├── <a href="portfolio.html" class="index">page des projets</a></p>
+                        <p>│   ├── <a href="projet_boxtobed.html" class="index">Projet BoXTOBed</a></p>
+                        <p>│   ├── <a href="projet_Gourmet&Co.html" class="index">Projet Gourmet&Co</a></p>
+                        <p>│   ├── <a href="projet_TechUniverse.html" class="index">Projet TechUniverse</a></p>
+                        <p>│   ├── <a href="projet_r3st0_ad_dhcp_tftp.html" class="index">Projet R3st0.fr ad dhcp tftp</a></p>
+                        <p>│   ├── <a href="projet_r3st0_GLPI.html" class="index">Projet R3st0.fr GLPI</a></p>
+                        <p>│   ├── <a href="projet_r3st0_NEXTCLOUD.html" class="index">Projet R3st0.fr NEXTCLOUD</a></p>
+                        <p>│   ├── <a href="projet_r3st0_SRV_DE_FICHIER.html" class="index">Projet SRV de Fichiers</a></p>
+                        <p>│   └── <a href="portfolio-1.html" class="index">Projet Portfolio</a></p>
+                    </div>
+        
+                    <p>└── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('veilleSection')">Veille Technologique</a></p>
+                    <div id="veilleSection" class="hidden">
+                        <p>    ├── <a href="veille.html" class="index">ma veille Technologique</a></p>
+                        <p>    └── <a href="veille_rss.html" class="index">Flux RSS – Cybersécurité en temps réel</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- Contenu principal -->
+    <pre>----------------------------------------------</pre>
+ <!-- Contenu principal -->
+ <div class="terminal-section">
+    <div class="command">$ cat compétences</div>
+    <div class="content">
+        <div> </div>
+        <span>┌──────────────────────────┐</span><br>
+        <span>│ PORTFOLIO DE COMPÉTENCES │</span><br>
+        <span>└──────────────────────────┘</span><br><br>
+
+        <span>&gt; Bienvenue dans mon espace de démonstration de compétences.</span><br><br>
+        <p></p>
+        <span>╔══════════════════╗</span><br>
+        <span>║ PROJETS RÉALISÉS ║</span><br>
+        <span>╚══════════════════╝</span><br><br>
+
+        <span>[01]  Intégration de postes dans Active Directory</span><br>
+        <span>   ↳ <a href="projet_ad.html">Afficher le projet</a></span><br><br>
+        <p></p>
+        <span>[02]  Mise en place d’un serveur TFTP sous Debian</span><br>
+        <span>   ↳ <a href="projet_tftp.html">Afficher le projet</a></span><br><br>
+        <p></p>
+        <span>[03]  Segmentation réseau avec VLAN + DHCP</span><br>
+        <span>   ↳ <a href="projet_vlan.html">Afficher le projet</a></span><br><br>
+        <p></p><p></p>
+        <span>╔══════════════════╗</span><br>
+        <span>║ COMPÉTENCES CLÉS ║</span><br>
+        <span>╚══════════════════╝</span><br><br>
+
+        <span>[01]  Administration Linux (Debian, Ubuntu)</span><br>
+        <span>   ↳ <a href="competence_linux.html">Détails</a></span><br><br>
+        <p></p>
+        <span>[02]  Scripting (PowerShell, Bash)</span><br>
+        <span>   ↳ <a href="competence_script.html">Détails</a></span><br><br>
+        <p></p>
+        <span>[03]  Virtualisation et supervision</span><br>
+        <span>   ↳ <a href="competence_virtualisation.html">Détails</a></span><br><br>
+        <p></p><p></p>
+        <span>╔═══════════════════════════════════════╗</span><br>
+        <span>║ NOTE DE LECTURE POUR L'HUMAIN CURIEUX ║</span><br>
+        <span>╚═══════════════════════════════════════╝</span><br><br>
+
+        <span>&gt;&gt; Chaque projet est accompagné de ses objectifs, outils utilisés,</span><br>
+        <span>&gt;&gt; compétences mobilisées, et lien vers les fichiers ou démonstrations.</span><br>
+        <span>&gt;&gt; Ce portfolio est le reflet de mon apprentissage progressif en BTS SIO,</span><br>
+        <span>&gt;&gt; centré sur l’option SISR (Services Informatiques aux Organisations).</span><br><br>
+        <p></p><p></p>
+        <p></p>
+        <p><em>---------------------------------------</em></p>
+        <span><em>_Sometimes I debug the impossible. The stack says no, the logs say yes, and I still make it work._</em></span><br>
+        <span><em>_Debugging is 10% logic, 90% dark rituals._</em></span>
+        <span><em>_The network knows when I’m here. That’s the real problem_</em></span>
+        <span><em>_Call me cursed: hardware fails, BIOS dies, switches hallucinate. Yet the packets still flow._</em></span>
+        <span><em>_Sometimes it breaks when I touch it. Sometimes it fixes itself when I leave. I’ve stopped asking._</em></span>
+        <span><em>_I’ve seen servers work only when I wasn’t watching. I’m not debugging anymore — I’m ghost hunting._</em></span>
+ <!-- blague mis a part je suis vraiment modie, il marive des truc improbableen informatique. genre un proxmox qui gere le fait davoir deux raiseau non conecter avec la meme ip mais une en cuivre une en fibre et il gere tres bien a qui envoyer quoi ... -->
+<!--Par la grâce de l’Omnimessie, permettez-moi de surmonter tous les défis qui se présentent à
+moi. Que je sois sain d’esprit, fort de corps et sans but à son service. Grâce à mes travaux,
+puissé-je être élevé à ses yeux et faire honneur à mon monde. Que ma forge et mes magos
+soient bénis pour le soin qu'ils m'ont apporté et que je les serve avec distinction depuis ce
+jour.-->
+</div>
+</div>
+</div>
+</body>
+</html>

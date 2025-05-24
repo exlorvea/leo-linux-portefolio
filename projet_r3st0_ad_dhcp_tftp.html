@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Léo Linux projet_R3ST0_FR_AD_DHCP_ET_TFTP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script_BareDeChargement.js" defer></script>
+    <link rel="icon" href="images/LLG.png" type="image/png">        <!-- icon site -->
+
+</head>
+<body>
+    <div class="container">
+        <!-- Section du chargement -->
+        <div id="loader">
+            <div id="bar-loader-messages-container">
+                <div id="loader-messages"></div>
+            </div>
+        </div>
+        
+
+        <!-- menu -->
+        <div id="mainContent" class="hidden">
+            <div class="terminal-window">
+                <h1>
+                    <a href="menu.html"><img src="images/LLG.png" alt="logo LLG"></a> |Portfolio Léo Linux|PROJET R3ST0.FR AD DHCP TFTP|
+                </h1>
+        
+                <!-- Menu principal -->
+                <a href="javascript:void(0);" class="toggle" onclick="toggleSection('menuSection')"> > menu </a>
+                <div id="menuSection" class="hidden">
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('cvSection')">CV</a></p>
+                    <div id="cvSection" class="hidden">
+                        <p>│   └── <a href="cv.html" class="index">mon CV</a></p>
+                    </div>
+        
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('portfolioSection')">Portfolio</a></p>
+                    <div id="portfolioSection" class="hidden">
+                        <p>│   ├── <a href="portfolio.html" class="index">page des projets</a></p>
+                        <p>│   ├── <a href="projet_boxtobed.html" class="index">Projet BoXTOBed</a></p>
+                        <p>│   ├── <a href="projet_Gourmet&Co.html" class="index">Projet Gourmet&Co</a></p>
+                        <p>│   ├── <a href="projet_TechUniverse.html" class="index">Projet TechUniverse</a></p>
+                        <p>│   ├── <a href="projet_r3st0_ad_dhcp_tftp.html" class="index">Projet R3st0.fr ad dhcp tftp</a></p>
+                        <p>│   ├── <a href="projet_r3st0_GLPI.html" class="index">Projet R3st0.fr GLPI</a></p>
+                        <p>│   ├── <a href="projet_r3st0_NEXTCLOUD.html" class="index">Projet R3st0.fr NEXTCLOUD</a></p>
+                        <p>│   ├── <a href="projet_r3st0_SRV_DE_FICHIER.html" class="index">Projet SRV de Fichiers</a></p>
+                        <p>│   └── <a href="portfolio-1.html" class="index">Projet Portfolio</a></p>
+                    </div>
+        
+                    <p>└── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('veilleSection')">Veille Technologique</a></p>
+                    <div id="veilleSection" class="hidden">
+                        <p>    ├── <a href="veille.html" class="index">ma veille Technologique</a></p>
+                        <p>    └── <a href="veille_rss.html" class="index">Flux RSS – Cybersécurité en temps réel</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- Contenu principal -->
+<pre>----------------------------------------------</pre>
+<div class="terminal-section">
+  <div class="command">$ cat projet_r3st0_ad_dhcp_tftp</div>
+  <h3 style="margin: 0;">PROJET : Infrastructure réseau - R3ST0.FR</h3>
+  <div>Réalisé : 2023/2024</div>
+  <div>Projet BTS SIO - SISR</div>
+<p></p>
+  <div>╔════════════════════╗</div>
+  <div>║ CONTEXTE DU PROJET ║</div>
+  <div>╚════════════════════╝</div>
+  <div>La société R3ST0.FR, spécialisée dans les avis de restaurants, a besoin de moderniser son infrastructure réseau afin de répondre à sa croissance rapide.</div>
+<p></p>
+  <div>╔═════════════════════════════════════╗</div>
+  <div>║ MISSION 1 – ACTIVE DIRECTORY ET DNS ║</div>
+  <div>╚═════════════════════════════════════╝</div>
+  <div>✔ Installation de l'AD sur Windows Server 2019</div>
+  <div>✔ Création du domaine : r3st0.lan</div>
+  <div>✔ Configuration DNS associée</div>
+  <div>✔ Ajout de comptes utilisateurs et d’OU</div>
+  <div>✔ Intégration des machines au domaine</div>
+<p></p>
+  <div>╔══════════════════════════╗</div>
+  <div>║ MISSION 2 – SERVEUR DHCP ║</div>
+  <div>╚══════════════════════════╝</div>
+  <div>✔ Installation du rôle DHCP</div>
+  <div>✔ Configuration de l’étendue : 192.168.1.100 à 192.168.1.200</div>
+  <div>✔ Configuration des options : DNS, passerelle, suffixe</div>
+  <div>✔ Attribution dynamique validée sur les clients</div>
+<p></p>
+  <div>╔════════════════════════════════════════╗</div>
+  <div>║ MISSION 3 – SAUVEGARDE SWITCH VIA TFTP ║</div>
+  <div>╚════════════════════════════════════════╝</div>
+  <div>✔ Installation du serveur TFTP (tftpd-hpa) sur Debian 11</div>
+  <div>✔ Configuration sécurisée (/srv/tftp, chmod, systemctl)</div>
+  <div>✔ Sauvegarde via Netgear CLI → fichier transféré et restaurable</div>
+<p></p>
+  <div>╔═════════════════════╗</div>
+  <div>║ TESTS / VALIDATIONS ║</div>
+  <div>╚═════════════════════╝</div>
+  <div>✔ Domaine : intégration réussie</div>
+  <div>✔ DHCP : attribution dynamique confirmée</div>
+  <div>✔ TFTP : fichier switch récupéré et restauré avec succès</div>
+<p></p>
+  <div>╔═══════════════╗</div>
+  <div>║ BILAN / RETEX ║</div>
+  <div>╚═══════════════╝</div>
+  <div>✔ Projet complet, bonne gestion du réseau et des rôles serveur</div>
+  <div>✔ Difficulté : gestion des IPs doublons sur les VMs</div>
+  <div><em>Projet professionnalisant pour la gestion d’une petite infrastructure</em></div>
+<p></p>
+  <pre>================================================================</pre>
+  <div>╔════════════════════════╗</div>
+  <div>║ VERSION PDF DISPONIBLE ║</div>
+  <div>╚════════════════════════╝</div>
+  <div>> Visualiser ou télécharger le fichier :</div>
+  ↳ <a href="documents/rapport_R3ST0_FR_AD_DHCP_ET_TFTP.pdf" target="_blank" class="index">R3ST0 - AD, DHCP, TFTP - PDF</a>
+<p><em>---------------------------------------</em></p>
+<p><em>_We made Windows Server behave. That was the real project._</em></p>
+</div>
+</div>
+</body>
+</html>

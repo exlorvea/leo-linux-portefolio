@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Léo Linux project TechUniverse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script_BareDeChargement.js" defer></script>
+    <link rel="icon" href="images/LLG.png" type="image/png">        <!-- icon site -->
+
+</head>
+<body>
+    <div class="container">
+        <!-- Section du chargement -->
+        <div id="loader">
+            <div id="bar-loader-messages-container">
+                <div id="loader-messages"></div>
+            </div>
+        </div>
+        
+
+        <!-- menu -->
+        <div id="mainContent" class="hidden">
+            <div class="terminal-window">
+                <h1>
+                    <a href="menu.html"><img src="images/LLG.png" alt="logo LLG"></a> |Portfolio Léo Linux|PROJET TechUniverse|
+                </h1>
+        
+                <!-- Menu principal -->
+                <a href="javascript:void(0);" class="toggle" onclick="toggleSection('menuSection')"> > menu </a>
+                <div id="menuSection" class="hidden">
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('cvSection')">CV</a></p>
+                    <div id="cvSection" class="hidden">
+                        <p>│   └── <a href="cv.html" class="index">mon CV</a></p>
+                    </div>
+        
+                    <p>├── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('portfolioSection')">Portfolio</a></p>
+                    <div id="portfolioSection" class="hidden">
+                        <p>│   ├── <a href="portfolio.html" class="index">page des projets</a></p>
+                        <p>│   ├── <a href="projet_boxtobed.html" class="index">Projet BoXTOBed</a></p>
+                        <p>│   ├── <a href="projet_Gourmet&Co.html" class="index">Projet Gourmet&Co</a></p>
+                        <p>│   ├── <a href="projet_TechUniverse.html" class="index">Projet TechUniverse</a></p>
+                        <p>│   ├── <a href="projet_r3st0_ad_dhcp_tftp.html" class="index">Projet R3st0.fr ad dhcp tftp</a></p>
+                        <p>│   ├── <a href="projet_r3st0_GLPI.html" class="index">Projet R3st0.fr GLPI</a></p>
+                        <p>│   ├── <a href="projet_r3st0_NEXTCLOUD.html" class="index">Projet R3st0.fr NEXTCLOUD</a></p>
+                        <p>│   ├── <a href="projet_r3st0_SRV_DE_FICHIER.html" class="index">Projet SRV de Fichiers</a></p>
+                        <p>│   └── <a href="portfolio-1.html" class="index">Projet Portfolio</a></p>
+                    </div>
+        
+                    <p>└── <a href="javascript:void(0);" class="toggle" onclick="toggleSection('veilleSection')">Veille Technologique</a></p>
+                    <div id="veilleSection" class="hidden">
+                        <p>    ├── <a href="veille.html" class="index">ma veille Technologique</a></p>
+                        <p>    └── <a href="veille_rss.html" class="index">Flux RSS – Cybersécurité en temps réel</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- Contenu principal -->
+    <pre>----------------------------------------------</pre>
+<!-- Contenu principal -->
+<!-- Section : PROJET -->
+
+<div class="terminal-section">
+    <div class="command">$ cat projet_techuniverse</div>    
+    <h3 style="margin: 0;">PROJET : Optimisation de l'infrastructure DMZ - TechUniverse</h3>
+    <div> Réalisé : Mars - Avril 2025</div>
+    <div> Projet BTS SIO - SISR</div>
+<p></p>
+
+    <div>╔════════════════════╗</div>
+    <div>║ CONTEXTE DU PROJET ║</div>
+    <div>╚════════════════════╝</div>
+    <div>TechUniverse est une entreprise spécialisée dans la vente de produits technologiques.</div>
+    <div>Face à une forte hausse du trafic Web, elle souhaite moderniser son infrastructure DMZ afin de garantir la haute disponibilité de ses services et permettre le télétravail sécurisé.</div>
+<p></p>
+
+    <div>╔═════════════════════════════════════════╗</div>
+    <div>║ MISSION 1 – MAQUETTE INFRASTRUCTURE DMZ ║</div>
+    <div>╚═════════════════════════════════════════╝</div>
+    <div>✔ Mise en place d’une maquette réseau avec :</div>
+    <div>  - 2 serveurs Web (Apache)</div>
+    <div>  - 1 pare-feu UTM Stormshield (WAN, LAN, DMZ)</div>
+    <div>✔ Règles NAT configurées pour rediriger le port 80 vers les serveurs web</div>
+    <div>✔ Validation de l’accessibilité depuis le WAN (simulation avec réseau du lycée)</div>
+<p></p>
+
+    <div>╔═══════════════════════════════════════╗</div>
+    <div>║ MISSION 2 – RÉPARTITION DE CHARGE WEB ║</div>
+    <div>╚═══════════════════════════════════════╝</div>
+    <div>✔ Installation de HAProxy sur SRV-HAPROXY1</div>
+    <div>✔ Configuration du fichier haproxy.cfg avec balance roundrobin</div>
+    <div>✔ Les requêtes web sont réparties entre SRV-WEB1 et SRV-WEB2</div>
+    <div>✔ Redirection de port configurée sur le Stormshield</div>
+    <div>✔ Test : alternance de réponse entre les deux serveurs lors du rechargement navigateur</div>
+<p></p>
+
+    <div>╔══════════════════════════════════════╗</div>
+    <div>║ MISSION 3 – HAUTE DISPONIBILITÉ (HA) ║</div>
+    <div>╚══════════════════════════════════════╝</div>
+    <div>✔ Déploiement d’un cluster HeartBeat entre HAPROXY1 et HAPROXY2</div>
+    <div>✔ Mise en place d’une IP virtuelle (192.168.1.30)</div>
+    <div>✔ En cas de panne d’un nœud, le second prend le relais automatiquement</div>
+    <div>✔ Test de bascule effectué en arrêtant manuellement le premier serveur</div>
+<p></p>
+
+    <div>╔══════════════════════════════════════╗</div>
+    <div>║ MISSION 4 – VPN SSL POUR TÉLÉTRAVAIL ║</div>
+    <div>╚══════════════════════════════════════╝</div>
+    <div>✔ Déploiement d’un serveur VPN OpenVPN</div>
+    <div>✔ Configuration serveur.conf + certificats TLS</div>
+    <div>✔ Intégration LDAP avec Active Directory (SRV-ADTECH)</div>
+    <div>✔ Authentification restreinte au groupe "g_vpn"</div>
+    <div>✔ Génération de fichiers .ovpn pour les utilisateurs distants</div>
+<p></p>
+
+    <div>╔═══════════════════════════════════╗</div>
+    <div>║ MISSION 5 – CONFIGURATION UTM DMZ ║</div>
+    <div>╚═══════════════════════════════════╝</div>
+    <div>✔ Configuration des interfaces réseau : WAN, LAN, DMZ</div>
+    <div>✔ Règles de filtrage Stormshield :</div>
+    <div>  - Accès HTTP/HTTPS vers l’IP virtuelle HAProxy</div>
+    <div>  - Autorisation LDAP/LDAPS vers SRV-ADTECH</div>
+    <div>  - Journalisation des accès activée</div>
+    <div>✔ NAT et routage configurés pour permettre les échanges LAN ↔ DMZ</div>
+<p></p>
+
+    <div>╔════════════════════════════════════════╗</div>
+    <div>║ MISSION 6 – CONTRÔLEUR DE DOMAINE (AD) ║</div>
+    <div>╚════════════════════════════════════════╝</div>
+    <div>✔ Installation de SRV-ADTECH (Windows Server 2022)</div>
+    <div>✔ Domaine créé : techuniverse.lan</div>
+    <div>✔ Création des OU : Utilisateurs, Groupes, VPN</div>
+    <div>✔ Comptes nominatifs et groupe "g_vpn" pour l’accès VPN</div>
+    <div>✔ Résolution DNS et authentification centralisée opérationnelles</div>
+<p></p>
+
+    <div>╔═════════════════════╗</div>
+    <div>║ TESTS / VALIDATIONS ║</div>
+    <div>╚═════════════════════╝</div>
+    <div>✔ Ping, accès web, et failover HAProxy fonctionnels</div>
+    <div>✔ Authentification VPN via LDAP : réussite test utilisateur "adurand"</div>
+    <div>✔ Monitoring manuel effectué sur chaque service</div>
+<p></p>
+
+    <div>╔══════════════════╗</div>
+    <div>║ BONNES PRATIQUES ║</div>
+    <div>╚══════════════════╝</div>
+    <div>✔ Nommage cohérent des machines</div>
+    <div>✔ Services segmentés par zones réseau (DMZ, LAN)</div>
+    <div>✔ Filtrage firewall strict et journalisé</div>
+    <div>✔ Protocoles d’administration sécurisés (SSH / RDP)</div>
+<p></p>
+
+    <div>╔═══════════════╗</div>
+    <div>║ BILAN / RETEX ║</div>
+    <div>╚═══════════════╝</div>
+    <div>✔ Infrastructure DMZ hautement disponible et fonctionnelle</div>
+    <div>✔ Défis techniques : configuration HeartBeat et LDAP</div>
+    <div>✔ L’ensemble est transposable en production avec peu d’ajustements</div>
+    <div><em>Projet complet, bien documenté, couvrant sécurité, HA, télétravail</em></div>
+<p></p>
+
+    <pre>================================================================</pre>
+
+<div>╔════════════════════════╗</div>
+<div>║ VERSION PDF DISPONIBLE ║</div>
+<div>╚════════════════════════╝</div>
+<div>> Visualiser ou télécharger le fichier :</div>
+  ↳ <a href="documents/Raport_TechUniverse.pdf" target="_blank" class="index">Rapport TechUniverse - PDF</a>
+
+<p><em>---------------------------------------</em></p>
+<p><em>_Redundancy is not a luxury. It’s a necessity._</em></p>
+</div>
