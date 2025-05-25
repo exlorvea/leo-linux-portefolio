@@ -202,4 +202,13 @@ pre {
 .terminal-section {
     margin: 10px; /* Assure-toi que les marges sont fixes */
 }
+/* Appliqué uniquement à <body id="omnimessie"> */
+body#omnimessie {
+  background: url("../images/mechanicusscanline.gif") no-repeat center center fixed;
+  background-size: cover;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 20px;
+}
 
